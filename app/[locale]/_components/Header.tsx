@@ -31,7 +31,7 @@ const Header = () => {
       <div
         className={cn(`font-inter fixed left-0 right-0 flex justify-between items-center  px-[4%] max-[690px]:px-[8%] z-50 h-[100px] transition-transform`, { 'translate-y-[-150%]': scroll.dir === 'down' && scroll.y > 100 })}
         style={{
-          backgroundColor: `rgba(0, 0, 0, ${Math.max(scroll.y / 200, 20)})`
+          backgroundColor: `rgba(0, 0, 0, ${Math.max(scroll.y / 200, 0.2)})`
         }}
       >
         <Image src='/svgs/logo.svg' width={74} height={74} alt={"logo"} />
@@ -49,7 +49,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[135px]"></div>
     </div>
   )
 }
