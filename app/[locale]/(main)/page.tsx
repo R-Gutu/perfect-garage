@@ -1,9 +1,12 @@
 
 import { useTranslations } from "next-intl"
+import Hero from "./_components/Hero";
 const page = () => {
   const t = useTranslations('home');
   return (
-    <div>{t('test')}</div>
+    <div>
+      <Hero />
+    </div>
   )
 }
 
