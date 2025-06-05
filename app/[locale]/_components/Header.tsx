@@ -29,15 +29,24 @@ const Header = () => {
   return (
     <div>
       <div
-        className={cn(`font-inter fixed left-0 right-0 flex justify-between items-center pt-8 pl-[4%] pr-[12%] max-[690px]:px-[8%] z-50 h-[135px] transition-transform`, { 'translate-y-[-150%]': scroll.dir === 'down' && scroll.y > 100 })}
+        className={cn(`font-inter fixed left-0 right-0 flex justify-between items-center  px-[4%] max-[690px]:px-[8%] z-50 h-[100px] transition-transform`, { 'translate-y-[-150%]': scroll.dir === 'down' && scroll.y > 100 })}
         style={{
-          backgroundColor: `rgba(0, 61, 53, ${scroll.y / 200})`,
-          boxShadow: `0px 0px 15px 20px rgba(0, 61, 53, ${scroll.y / 200})`
+          backgroundColor: `rgba(0, 0, 0, ${Math.max(scroll.y / 200, 20)})`
         }}
       >
         <Image src='/svgs/logo.svg' width={74} height={74} alt={"logo"} />
-        <div className="flex gap-5 items-center">
-          <LanguageSwitcher className="max-[690px]:hidden" />
+        <div className="flex gap-10">
+          <ul className="flex gap-5 items-center text-nowrap">
+            <li className="cursor-pointer font-inter">DESPRE NOI</li>
+            <li className="cursor-pointer font-inter">SERVICII</li>
+            <li className="cursor-pointer font-inter">DE CE NOI</li>
+            <li className="cursor-pointer font-inter">RECENZII</li>
+            <li className="cursor-pointer font-inter">CUM LUCRĂM CU CLIENȚII</li>
+            <li className="cursor-pointer font-inter">CONTACTE</li>
+          </ul>
+          <div className="flex items-center">
+            <LanguageSwitcher className="" />
+          </div>
         </div>
       </div>
       <div className="w-full h-[135px]"></div>
