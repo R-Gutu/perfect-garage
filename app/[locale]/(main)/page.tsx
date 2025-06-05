@@ -4,9 +4,10 @@ import Hero from "./_components/Hero";
 const page = () => {
   const t = useTranslations('home');
   return (
-    <div>
+    <div className="h-[3000px] font-inter">
       <Hero />
     </div>
+
   )
 }
 
