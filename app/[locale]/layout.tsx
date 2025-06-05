@@ -1,16 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Manrope, Montserrat } from "next/font/google";
 import "./globals.css";
+import { NextIntlClientProvider } from "next-intl";
+import Header from "./_components/Header";
+import { domAnimation, LazyMotion } from "motion/react"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const inter = Inter({
+  subsets: ['latin', 'cyrillic'],
+  variable: '--font-inter'
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const manrope = Manrope({
+  subsets: ['latin', 'cyrillic'],
+  variable: '--font-manrope'
+})
+
+const montserrat = Montserrat({
+  subsets: ['latin', 'cyrillic'],
+  variable: '--font-montserrat'
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,11 +31,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" className={`${montserrat.variable} ${manrope.variable} ${inter.variable} antialiased`}>
+      <body>
+        <LazyMotion features={domAnimation}>
+          <NextIntlClientProvider >
+            <Header />
+            {children}
+          </NextIntlClientProvider>
+        </LazyMotion>
       </body>
     </html>
   );

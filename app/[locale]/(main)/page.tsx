@@ -3,7 +3,8 @@ import { useTranslations } from "next-intl"
 const page = () => {
   const t = useTranslations('home');
   return (
-    <div>{t('test')}</div>
+    
+    <div className="h-[3000px] font-inter">{t('test')}</div>
   )
 }
 
