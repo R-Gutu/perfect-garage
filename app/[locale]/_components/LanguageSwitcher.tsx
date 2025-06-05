@@ -39,7 +39,7 @@ const LanguageSwitcher = ({ className }: { className?: string }) => {
                     {isComponentVisible && (
                         <motion.ul
                             ref={ref as React.RefObject<HTMLUListElement>}
-                            className={cn('absolute bg-[#00000080] px-0.5 rounded-br-2xl pb-1')}
+                            className={cn('absolute bg-[#00000080] px-0.5')}
                             initial={{ opacity: 0, y: -26, height: 0 }}
                             animate={{ opacity: 1, y: -26, height: 'auto' }}
                             exit={{ opacity: 0, y: 0, height: 0 }}
@@ -49,7 +49,7 @@ const LanguageSwitcher = ({ className }: { className?: string }) => {
                                 <motion.li
                                     key={locale}
                                     onClick={() => locale === currentLocale ? '' : handleChangeLanguage(locale)}
-                                    className={cn('px-[1px]', { 'text-[#D2DE32]': locale === currentLocale })}
+                                    className={cn('px-[1px]', { 'text-[#FF001D]': locale === currentLocale })}
                                     initial={{ opacity: 0, x: -5 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: index * 0.1 }}
