@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 const Services = () => {
@@ -6,7 +7,7 @@ const Services = () => {
       id: 1,
       title: "Reparația suspensiei/direcției",
       price: "DE LA 600 lei",
-      image: "/image/suspension.png",
+      image: "/image/service1.png",
       hasDiscount: true,
       size: "normal"
     },
@@ -14,7 +15,7 @@ const Services = () => {
       id: 2,
       title: "Diagnosticarea, repararea și încărcarea cu freon a sistemelor de aer condiționat",
       price: "de la 200 lei",
-      image: "/image/air-conditioning.png",
+      image: "/image/service2.png",
       hasDiscount: false,
       size: "normal"
     },
@@ -22,7 +23,7 @@ const Services = () => {
       id: 3,
       title: "Reparația sistemului de frânare",
       price: "de la 300 lei",
-      image: "/image/braking-system.png",
+      image: "/image/service3.png",
       hasDiscount: true,
       size: "normal"
     },
@@ -30,7 +31,7 @@ const Services = () => {
       id: 4,
       title: "Reparația sistemului de evacuare și a tobei",
       price: "de la 200 lei",
-      image: "/image/exhaust-system.png",
+      image: "/image/service4.png",
       hasDiscount: true,
       size: "normal"
     },
@@ -38,7 +39,7 @@ const Services = () => {
       id: 5,
       title: "Reparația sistemului de alimentare cu combustibil",
       price: "de la 300 lei",
-      image: "/image/fuel-system.png",
+      image: "/image/service5.png",
       hasDiscount: true,
       size: "large",
       featured: true
@@ -47,7 +48,7 @@ const Services = () => {
       id: 6,
       title: "Reglarea geometriei roților",
       price: "de la 200 lei",
-      image: "/image/wheel-alignment.png",
+      image: "/image/service6.png",
       hasDiscount: false,
       size: "normal"
     },
@@ -55,7 +56,7 @@ const Services = () => {
       id: 7,
       title: "Reparația instalației electrice a automobilului",
       price: "DE LA 600 lei",
-      image: "/image/electrical-repair.png",
+      image: "/image/service7.png",
       hasDiscount: true,
       size: "normal"
     },
@@ -63,7 +64,7 @@ const Services = () => {
       id: 8,
       title: "Schimb de ulei",
       price: "de la 200 lei",
-      image: "/image/oil-change.png",
+      image: "/image/service8.png",
       hasDiscount: false,
       size: "normal"
     }
@@ -93,25 +94,27 @@ const Services = () => {
                   : 'bg-[#1E1E1E] hover:bg-[#1E1E1E]/80'
               } rounded-2xl overflow-hidden p-6`}
             >
-              {/* Discount Badge */}
-              {service.hasDiscount && (
-                <div className="absolute top-4 right-4 z-10">
-                  <span className="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
-                    REDUCERE
-                  </span>
-                </div>
-              )}
 
-              {/* Service Content */}
-              <div className="flex flex-col h-full">
+             {/* Service Content */}
+              <div className="flex flex-col relative">
                 {/* Service Title */}
-                <h3 className="text-white text-lg md:text-xl font-semibold mb-4 leading-tight font-montserrat">
-                  {service.title}
-                </h3>
+                <div className="flex items-start justify-between mb-2">
+                    <h3 className="text-white text-xl md:text-2xl font-semibold mb-4 leading-tight font-montserrat">
+                    {service.title}
+                    </h3>
+                    {/* Discount Badge */}
+                    {service.hasDiscount && (
+                        <div className="z-10">
+                        <span className={cn(" text-white text-xs font-bold px-3 py-1 rounded-full", `${service.featured ? 'bg-[#141414]' : 'bg-red-600'}`)}>
+                            REDUCERE
+                        </span>
+                        </div>
+                    )}
+                </div>
 
                 {/* Service Image */}
-                <div className="flex-1 flex items-center justify-center mb-6 relative">
-                  <div className="relative w-full h-32 md:h-40">
+                <div className="absolute inset-0 w-full h-full">
+                  <div className="bottom-0 right-0">
                     <Image
                       src={service.image}
                       alt={service.title}
@@ -122,7 +125,7 @@ const Services = () => {
                 </div>
 
                 {/* Service Price */}
-                <div className="mt-auto">
+                <div className="flex items-center justify-between mt-20">
                   <p className={`text-sm font-semibold ${
                     service.featured ? 'text-white' : 'text-gray-300'
                   }`}>
