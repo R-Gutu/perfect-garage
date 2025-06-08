@@ -4,6 +4,8 @@ import Hero from "./_components/Hero";
 import Services from "./_components/Services";
 import WhyUs from "./_components/WhyUs";
 import Banner from "./_components/Banner";
+import Team from "./_components/Team";
+import Testimonials from "./_components/Testimonials";
 const page = () => {
   const t = useTranslations('home');
   return (
@@ -12,6 +14,8 @@ const page = () => {
       <Services />
       <WhyUs />
       <Banner />
+      <Team />
+      <Testimonials />
     </div>
 
   )
