@@ -14,14 +14,14 @@ const page = () => {
   return (
     <div className="font-inter">
       <Hero />
-      {/* <Slides /> */}
+      <Slides />
       {/* <Services /> */}
       {/* <WhyUs /> */}
       {/* <LogoSlider /> */}
       {/* <Banner /> */}
       {/* <Team /> */}
       {/* <Testimonials /> */}
-      <HowWeWork />
+      {/* <HowWeWork /> */}
     </div>
 
   )
