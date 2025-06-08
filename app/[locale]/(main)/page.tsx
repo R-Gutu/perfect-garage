@@ -7,17 +7,21 @@ import WhyUs from "./_components/WhyUs";
 import Banner from "./_components/Banner";
 import Team from "./_components/Team";
 import Testimonials from "./_components/Testimonials";
+import LogoSlider from "./_components/LogoSlider";
+import HowWeWork from "./_components/HowWeWork";
 const page = () => {
   const t = useTranslations('home');
   return (
-    <div className="h-[3000px] font-inter">
+    <div className="font-inter">
       <Hero />
-      <Slides />
-      <Services />
-      <WhyUs />
-      <Banner />
-      <Team />
-      <Testimonials />
+      {/* <Slides /> */}
+      {/* <Services /> */}
+      {/* <WhyUs /> */}
+      {/* <LogoSlider /> */}
+      {/* <Banner /> */}
+      {/* <Team /> */}
+      {/* <Testimonials /> */}
+      <HowWeWork />
     </div>
 
   )

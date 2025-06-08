@@ -37,7 +37,7 @@ export default function Carousel({ slides }: { slides: Slide[] }) {
                     ></div>)}
                 </div>
                 <div>
-                    <p className="text-[#FF001D] text-right">DESPRE NOI</p>
+                    <p className="text-[#FF001D] text-[20px] text-right">DESPRE NOI</p>
                     <p className="text-[50px] font-playfair font-bold text-white text-right mb-10 max-[550px]:text-[35px] whitespace-pre">{slides[currentSlide].title}</p>
                 </div>
             </div>

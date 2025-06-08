@@ -3,6 +3,7 @@ import { Inter, Manrope, Montserrat } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import Header from "./_components/Header";
+import Footer from "./_components/Footer";
 import { domAnimation, LazyMotion } from "motion/react"
 
 const inter = Inter({
@@ -37,6 +38,7 @@ export default function RootLayout({
           <NextIntlClientProvider >
             <Header />
             {children}
+            <Footer />
           </NextIntlClientProvider>
         </LazyMotion>
       </body>
