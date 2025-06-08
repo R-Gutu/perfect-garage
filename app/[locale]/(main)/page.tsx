@@ -15,13 +15,13 @@ const page = () => {
     <div className="font-inter">
       <Hero />
       <Slides />
-      {/* <Services /> */}
-      {/* <WhyUs /> */}
-      {/* <LogoSlider /> */}
-      {/* <Banner /> */}
-      {/* <Team /> */}
-      {/* <Testimonials /> */}
-      {/* <HowWeWork /> */}
+      <Services />
+      <WhyUs />
+      <LogoSlider />
+      <HowWeWork />
+      <Banner />
+      <Team />
+      <Testimonials />
     </div>
 
   )

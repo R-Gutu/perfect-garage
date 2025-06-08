@@ -20,18 +20,18 @@ export default function Footer() {
                         <div>
                             <p className="font-bold text-[20px]">CONTACTE:</p>
                             <p className="font-bold text-[18px]">Telefon:</p>
-                            <p className="text-[#8F9FA3]">+373 60 410 999 <br />
+                            <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px]">+373 60 410 999 <br />
                                 +373 60 410 888 <br />
                                 +373 60 911 155</p>
                         </div>
                         <div>
                             <p className="font-bold text-[18px]">Orele de lucru:</p>
-                            <p className="text-[#8F9FA3]">Luni - Vineri: 08:00 - 20:00 <br />
+                            <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px]">Luni - Vineri: 08:00 - 20:00 <br />
                                 Sâmbătă: 08:00 - 16:00</p>
                         </div>
                         <div>
                             <p className="font-bold text-[18px]">ADRESE:</p>
-                            <p className="text-[#8F9FA3]">or.Chișinău, str.Petricani 23/1 <br />
+                            <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px]">or.Chișinău, str.Petricani 23/1 <br />
                                 or.Chișinău, bd. Moscova 21</p>
                         </div>
                     </div>

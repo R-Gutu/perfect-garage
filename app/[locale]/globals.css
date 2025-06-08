@@ -5,6 +5,10 @@
   --foreground: #171717;
 }
 
+:root:has(.no-doc-scroll) {
+  overflow: hidden;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
