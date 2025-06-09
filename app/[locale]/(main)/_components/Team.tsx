@@ -33,7 +33,7 @@ const TeamSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
           {members.map((member, idx: number) => (
             <div key={idx} className="group cursor-pointer">
-              <div className="border-16 border-[#F5F5F5] rounded-3xl sm:rounded-4xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+              <div className="border-16 border-[#FF001D] rounded-3xl sm:rounded-4xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
                 <div className="relative overflow-hidden bg-transparent">
                   <div className="aspect-[4/5] relative">
                     <Image
@@ -46,11 +46,11 @@ const TeamSection = () => {
                   </div>
                 </div>
 
-                <div className="text-center p-6 sm:p-8 bg-[#F5F5F5]">
-                  <h3 className="text-black text-2xl sm:text-3xl font-bold mb-2 font-montserrat">
+                <div className="text-center p-6 sm:p-8 bg-[#FF001D]">
+                  <h3 className="text-white text-2xl sm:text-3xl font-bold mb-2 font-montserrat">
                     {member.name}
                   </h3>
-                  <p className="text-gray-600 text-sm sm:text-base font-semibold tracking-wider font-manrope">
+                  <p className="text-white/90 text-sm sm:text-base font-semibold tracking-wider font-manrope">
                     {member.role}
                   </p>
                 </div>
