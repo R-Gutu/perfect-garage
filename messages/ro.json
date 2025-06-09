@@ -18,14 +18,14 @@
     "footer": {
   "logoAlt": "logo footer",
   "description": "De la schimburi de ulei de rutină până la reparații complexe ale motorului, oferim o gamă largă de servicii de reparații și întreținere auto pentru a răspunde tuturor nevoilor dvs. într-un singur loc convenabil.",
-  "links": [
-    "Despre noi.",
-    "Servicii.",
-    "De ce noi.",
-    "Recenzii.",
-    "Cum lucrăm cu clienții.",
-    "Contacte."
-  ],
+  "nav": {
+    "about": "Despre noi.",
+    "services": "Servicii.",
+    "whyUs": "De ce noi.",
+    "reviews": "Recenzii.",
+    "howWeWork": "Cum lucrăm cu clienții.",
+    "contact": "Contacte."
+  },
   "contacts": {
     "heading": "CONTACTE:",
     "phone": "Telefon:",

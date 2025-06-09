@@ -14,7 +14,7 @@ export default function Slides() {
     }));
 
     return (
-        <div className='flex flex-col justify-center items-center py-20 w-full relative overflow-hidden'>
+        <div id='about' className='flex flex-col justify-center items-center py-20 w-full relative overflow-hidden'>
             <Carousel slides={slides} />
             <div className='max-[940px]:translate-y-[15px] translate-y-[-15px] grid grid-cols-4 max-[700px]:grid-cols-2 max-[500px]:grid-cols-1 w-full bg-[linear-gradient(180deg,_#FF001D_0%,_#59010B_178.69%)] font-montserrat'>
                 <div className='flex flex-col items-center text-center'>

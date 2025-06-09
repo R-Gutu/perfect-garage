@@ -7,7 +7,7 @@ const Services = () => {
   const serviceCount = 8;
 
   return (
-    <section className="bg-[#222222] py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
+    <section id="services" className="bg-[#222222] py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center sm:text-end mb-8 sm:mb-12 font-montserrat">
           <p className="text-red-500 text-lg sm:text-xl font-semibold tracking-wide uppercase mb-2">
