@@ -44,7 +44,7 @@ const Testimonials = () => {
   };
 
   const renderTestimonialCard = (testimonial: typeof testimonials[0], isFullHeight = false) => (
-    <div className={`border-2 border-red-500 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 ${isFullHeight ? 'h-full' : ''} flex flex-col`}>
+    <div id='testimonials' className={`border-2 border-red-500 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 ${isFullHeight ? 'h-full' : ''} flex flex-col`}>
       {/* User Info */}
       <div className="flex items-center mb-4 sm:mb-6">
         <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">

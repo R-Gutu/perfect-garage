@@ -1,19 +1,26 @@
+"use client"
 import Image from "next/image"
 export default function Footer() {
+    const scrollToId = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     return (
-        <div className="bg-black grid grid-cols-[60%_40%] max-[800px]:grid-cols-1 max-[800px]:gap-10 mt-[50px] rounded-t-[50px] p-[40px] max-[800px]:p-[20px] font-montserrat">
+        <div id="footer" className="bg-black grid grid-cols-[60%_40%] max-[800px]:grid-cols-1 max-[800px]:gap-10 mt-[50px] rounded-t-[50px] p-[40px] max-[800px]:p-[20px] font-montserrat">
             <div className="flex flex-col gap-10">
                 <Image src="/svgs/footer_logo.svg" width={80} height={80} alt="footer logo" />
                 <p className="text-[#8F9FA3] w-1/2 max-[800px]:w-full">De la schimburi de ulei de rutină până la reparații complexe ale motorului, oferim o gamă largă de servicii de reparații și întreținere auto pentru a răspunde tuturor nevoilor dvs. într-un singur loc convenabil.</p>
             </div>
             <div className="flex flex-col justify-between gap-[100px] row-span-2">
                 <div className="flex flex-wrap gap-2 w-full justify-between text-[#8F9FA3] max-[800px]:flex-col">
-                    <p className="cursor-pointer">Despre noi.</p>
-                    <p className="cursor-pointer">Servicii.</p>
-                    <p className="cursor-pointer">De ce noi.</p>
-                    <p className="cursor-pointer">Recenzii.</p>
-                    <p className="cursor-pointer">Cum lucrăm cu clienții.</p>
-                    <p className="cursor-pointer">Contacte.</p>
+                    <p className="cursor-pointer" onClick={() => scrollToId('about')}>Despre noi.</p>
+                    <p className="cursor-pointer" onClick={() => scrollToId('services')}>Servicii.</p>
+                    <p className="cursor-pointer" onClick={() => scrollToId('whyUs')}>De ce noi.</p>
+                    <p className="cursor-pointer" onClick={() => scrollToId('testimonials')}>Recenzii.</p>
+                    <p className="cursor-pointer" onClick={() => scrollToId('howWeWork')}>Cum lucrăm cu clienții.</p>
+                    <p className="cursor-pointer" onClick={() => scrollToId('footer')}>Contacte.</p>
                 </div>
                 <div className="flex w-full">
                     <div className="flex flex-col gap-10">

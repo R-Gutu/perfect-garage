@@ -1,6 +1,6 @@
 import Image from "next/image"
 export default function HowWeWork() {
-    return (<div className="font-montserrat text-center">
+    return (<div id="howWeWork" className="font-montserrat text-center">
         <p className="font-bold text-[45px]">Cum lucrăm cu clienții?</p>
         <p className="text-[#FF001D] text-[20px]">Simplu. Clar. Eficient.</p>
         <div className="grid grid-cols-[2fr_1fr_2fr_1fr_2fr] px-[100px] max-[900px]:px-[10px] max-[900px]:grid-cols-1">
