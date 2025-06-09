@@ -1,51 +1,31 @@
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
 const WhyUs = () => {
-    const whyus = [
-    {
-      id: 1,
-      title: "Lucrări executate la timp",
-      description: "Efectuăm lucrările într-un timp scurt, dacă aveți nevoie urgentă de automobil. Calitatea nu este compromisă, iar clientul rămâne mulțumit și în siguranță.",
-      image: "/svg/whyus1.svg",
-    },
-    {
-      id: 2,
-      title: "Suntem experți în reparația motoarelor, chiar și a pieselor",
-      description: "Multe service-uri urmăresc un profit rapid, recomandând direct înlocuirea unei piese sau a motorului. Noi, însă, respectăm clienții noștri și facem tot posibilul să reparăm. Mecanicii noștri sunt maeștri în repararea pieselor și motoarelor.",
-      image: "/svg/whyus2.svg",
-    },
-    {
-      id: 3,
-      title: "Mecanici cu experiență mare",
-      description: "Toți specialiștii noștri au cel puțin 3 ani de experiență și sunt specializați în rezolvarea anumitor tipuri de probleme.",
-      image: "/svg/whyus3.svg",
-    },
-    {
-      id: 4,
-      title: "Cei mai experți în reparația instalației electrice ",
-      description: "Noi reparăm problemele pe care și centrele auto oficiale ale dealerilor le refuză.",
-      image: "/svg/whyus4.svg",
-    }]
+  const t = useTranslations('whyUs');
+  const whyusList = t.raw('list') as {
+    title: string,
+    description: string,
+    image: string,
+  }[];
 
   return (
     <section className="bg-[#222222] py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center sm:text-start mb-8 sm:mb-12 font-montserrat max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-montserrat">
-            DE CE NOI?
+            {t('title')}
           </h2>
           <p className="text-red-500 text-lg sm:text-xl font-semibold tracking-wide uppercase mb-2">
-            Mai mult decat un<br />
-            service auto
+            {t('subtitle1')}<br />
+            {t('subtitle2')}
           </p>
         </div>
-
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-8 lg:gap-12 font-montserrat max-w-7xl mx-auto">
             <div className="flex-shrink-0 w-full sm:w-2/3 md:w-1/2 lg:w-1/3 max-w-md">
-                <Image src="/image/whyus.png" alt="whyus" width={400} height={600} className="w-full h-auto" />
+                <Image src="/image/whyus.png" alt={t('illustrationAlt')} width={400} height={600} className="w-full h-auto" />
             </div>
             <div className="flex flex-col w-full lg:w-2/3">
-            {whyus.map((item, index) => (
+            {whyusList.map((item, index) => (
             <div key={index} className="rounded-xl cursor-pointer transition-colors duration-300 hover:bg-[#292929] flex flex-col sm:flex-row items-center sm:items-center gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-6 lg:px-12 py-4 sm:py-6">
                 <div className="flex-shrink-0 flex items-center justify-center">
                     <Image

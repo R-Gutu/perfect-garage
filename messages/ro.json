@@ -3,5 +3,303 @@
         "test": "this is ro page"
     },
     "header": {
+  "logoAlt": "siglă",
+  "burgerAlt": "meniul de navigare",
+  "closeAlt": "închide meniul",
+  "nav": {
+    "about": "Despre noi",
+    "services": "Servicii",
+    "whyUs": "De ce noi",
+    "reviews": "Recenzii",
+    "howWeWork": "Cum lucrăm cu clienții",
+    "contact": "Contacte"
+  }
+},
+    "footer": {
+  "logoAlt": "logo footer",
+  "description": "De la schimburi de ulei de rutină până la reparații complexe ale motorului, oferim o gamă largă de servicii de reparații și întreținere auto pentru a răspunde tuturor nevoilor dvs. într-un singur loc convenabil.",
+  "links": [
+    "Despre noi.",
+    "Servicii.",
+    "De ce noi.",
+    "Recenzii.",
+    "Cum lucrăm cu clienții.",
+    "Contacte."
+  ],
+  "contacts": {
+    "heading": "CONTACTE:",
+    "phone": "Telefon:",
+    "phoneNumbers": [
+      "+373 60 410 999",
+      "+373 60 410 888",
+      "+373 60 911 155"
+    ],
+    "workingHours": "Orele de lucru:",
+    "workingTime": [
+      "Luni - Vineri: 08:00 - 20:00",
+      "Sâmbătă: 08:00 - 16:00"
+    ],
+    "addresses": "ADRESE:",
+    "addressList": [
+      "or.Chișinău, str.Petricani 23/1",
+      "or.Chișinău, bd. Moscova 21"
+    ]
+  },
+  "languagesTitle": "Limbi",
+  "languageRU": "RU",
+  "languageRO": "RO",
+  "copyright": "© 2025 Toate drepturile rezervate. Creat de Quant-Apps."
+},
+"banner": {
+  "headline": "Vă așteptăm pentru\no diagnosticare\ncompletă a mașinii\ndumneavoastră la",
+  "price": "600 lei",
+  "bookBtn": "Programați-vă",
+  "consultBtn": "Consultație",
+  "features": [
+    {
+      "icon": "/svg/banner1.svg",
+      "iconAlt": "Echipamente moderne",
+      "title": "Echipamente moderne",
+      "desc": "Folosim tehnologie de top din Italia pentru o diagnosticare precisă și rapidă."
+    },
+    {
+      "icon": "/svg/banner2.svg",
+      "iconAlt": "Lifturi performante",
+      "title": "Lifturi performante",
+      "desc": "Ridicăm orice tip de mașină - până la 5 tone - în siguranță totală."
+    },
+    {
+      "icon": "/svg/banner3.svg",
+      "iconAlt": "Prețuri accesibile",
+      "title": "Prețuri accesibile",
+      "desc": "Oferim cel mai bun raport calitate-preț. Fără costuri ascunse."
     }
+  ]
+},
+"carousel": {
+    "about-us": "DESPRE NOI"
+},
+"hero": {
+  "bgAlt": "fundal garaj perfect",
+  "brand": "PERFECT GARAGE",
+  "headline1": "ANI DE EXPERIENȚĂ",
+  "headline2": "PENTRU",
+  "headline3": "AUTOMOBILUL DVS.",
+  "subtitle": "Diagnostică Detaliată, Soluții Rapide și Eficiente.",
+  "bookBtn": "Programați-vă",
+  "consultBtn": "Consultație"
+},
+"howWeWork": {
+  "title": "Cum lucrăm cu clienții?",
+  "subtitle": "Simplu. Clar. Eficient.",
+  "steps": [
+    {
+      "iconAlt": "telefon",
+      "title": "APEL",
+      "desc": "Sunați-ne sau trimiteți-ne un mesaj"
+    },
+    {
+      "iconAlt": "calendar",
+      "title": "PROGRAMARE",
+      "desc": "Oferim consultanță gratuită, stabilim data și ora, precum și costul total al lucrărilor."
+    },
+    {
+      "iconAlt": "cheie",
+      "title": "REPARAȚIE",
+      "desc": "Diagnosticare și reparații auto în service-ul nostru."
+    },
+    {
+      "iconAlt": "bani",
+      "title": "ACHITARE",
+      "desc": "Lucrările sunt finalizate. Clientul verifică mașina și efectuează plata."
+    }
+  ]
+},
+"logoSlider": {
+  "title": "Servicii de întreținere și reparații ca la producătorii oficiali",
+  "carsAlt": "logo mărci auto"
+},
+"services": {
+  "subtitle": "CE OFERIM",
+  "title": "Serviciile Noastre",
+  "discount": "REDUCERE",
+  "list": [
+    {
+      "title": "Reparația suspensiei/direcției",
+      "price": "de la 600 lei",
+      "image": "/image/service1.png",
+      "hasDiscount": true,
+      "size": "normal",
+      "featured": false
+    },
+    {
+      "title": "Diagnosticarea, repararea și încărcarea cu freon a sistemelor de aer condiționat",
+      "price": "de la 200 lei",
+      "image": "/image/service2.png",
+      "hasDiscount": false,
+      "size": "normal",
+      "featured": false
+    },
+    {
+      "title": "Reparația sistemului de frânare",
+      "price": "de la 300 lei",
+      "image": "/image/service3.png",
+      "hasDiscount": true,
+      "size": "normal",
+      "featured": false
+    },
+    {
+      "title": "Reparația sistemului de evacuare și a tobei",
+      "price": "de la 200 lei",
+      "image": "/image/service4.png",
+      "hasDiscount": true,
+      "size": "normal",
+      "featured": false
+    },
+    {
+      "title": "Reparația sistemului de alimentare cu combustibil",
+      "price": "de la 300 lei",
+      "image": "/image/service5.png",
+      "hasDiscount": true,
+      "size": "large",
+      "featured": true
+    },
+    {
+      "title": "Reglarea geometriei roților",
+      "price": "de la 200 lei",
+      "image": "/image/service6.png",
+      "hasDiscount": false,
+      "size": "normal",
+      "featured": false
+    },
+    {
+      "title": "Reparația instalației electrice a automobilului",
+      "price": "de la 600 lei",
+      "image": "/image/service7.png",
+      "hasDiscount": true,
+      "size": "normal",
+      "featured": false
+    },
+    {
+      "title": "Schimb de ulei",
+      "price": "de la 200 lei",
+      "image": "/image/service8.png",
+      "hasDiscount": false,
+      "size": "normal",
+      "featured": false
+    }
+  ]
+},
+"aboutSlides": {
+  "slides": [
+    {
+      "title": "Reputatia noastra\nvorbeste pentru noi",
+      "description": "Intelegem perfect cat de mult pretuiti automobilul dumneavoastra, iar noi il tratam cu aceeasi grija. Detinem cunostinte profunde a tuturor etapelor de reparatie si intretinere auto.\n\nNe mandrim cu utilizarea echipamentelor profesionale si a pieselor de schimb originale.\n\nEchipa noastra este alcatuita din profesionisti dedicati, multi dintre ei fiind specializati pe anumite marci auto.\n\nAvem cei mai buni electricieni din oras.\n\nIncrederea dumneavoastra are cea mai mare valoare pentru noi.",
+      "image": "/image/about.png"
+    },
+    {
+      "title": "SUNTEM PE PIATA\nDIN 2015",
+      "description": "Experienta noastra bogata si grija pentru automobilele clientilor nostri se reflecta in calitatea superioara a serviciilor. Oferim toate serviciile, de la simpla schimbare a uleiului pana la reparatii complexe ale motorului, utilizand echipamente certificate de producator.",
+      "image": "/image/about2.png"
+    },
+    {
+      "title": "ZONA DE REPARATIE\nDEPASESTE 1500 mp",
+      "description": "Oferim servicii complete pentru orice tip de defectiune auto, inclusiv reparatia motoarelor si pieselor, nu doar inlocuirea lor.\n\nDetinem un depozit propriu de piese si un lift modern pentru ridicarea masinilor.",
+      "image": "/image/about3.png"
+    },
+    {
+      "title": "ALEGEM PIESELE PENTRU\nDUMNEAVOASTRA",
+      "description": "Experienta noastra bogata si grija pentru automobilele clientilor nostri se reflecta in calitatea superioara a serviciilor. Oferim toate serviciile, de la simpla schimbare a uleiului pana la reparatii complexe ale motorului, utilizand echipamente certificate de producator.",
+      "image": "/image/about4.png"
+    }
+  ],
+  "stats": [
+    { "value": "10", "label": "ani de experiență \n în reparații auto" },
+    { "value": ">3000", "label": "de clienți mulțumiți" },
+    { "value": "60", "label": "de specialiști" },
+    { "value": "1400", "label": "mp zonă de reparație" }
+  ]
+},
+"teamSection": {
+  "title": "CUNOAȘTEȚÍ ECHIPA ",
+  "titleAccent": "NOASTRĂ DE TOP",
+  "description": "Suntem o echipă dedicată, pasionată de excelență și mereu pregătită să depășească așteptările. Fiecare membru contribuie cu talentul și energia sa pentru a transforma ideile în rezultate remarcabile.",
+  "members": [
+    {
+      "name": "ANDREI",
+      "role": "MOTORIST",
+      "image": "/image/team1.png",
+      "alt": "Andrei - Motorist"
+    },
+    {
+      "name": "GHEORGHE",
+      "role": "MECANIC",
+      "image": "/image/team2.png",
+      "alt": "Gheorghe - Mecanic"
+    },
+    {
+      "name": "VALERIU",
+      "role": "ELECTRICIAN",
+      "image": "/image/team3.png",
+      "alt": "Valeriu - Electrician"
+    }
+  ]
+},
+"testimonials": {
+  "title": "Oamenii au încredere în serviciile noastre",
+  "list": [
+    {
+      "name": "ALEXANDRU",
+      "avatar": "/image/testimonial1.png",
+      "rating": 5,
+      "text": "Nu am nicio reclamație la adresa profesionalismului de la Perfect Garage. Recunosc sincer, am apelat la serviciile acestui service pentru prima dată. Înainte, mergeam la diverse service-uri, chiar și la service-urile dealerilor auto oficiali, și am fost mereu dezamăgit de rezultat. Lăsam acolo jumătate din salariu, iar mașina se strica după doar două săptămâni. Acum, îmi întrețin mașina doar în mâinile experților de la Perfect Garage – sunt sigur că este pe mâini bune! Mă bucur că am găsit, în sfârșit, un service de încredere!"
+    },
+    {
+      "name": "DENIS",
+      "avatar": "/image/testimonial2.png",
+      "rating": 5,
+      "text": "Am căutat mult timp un service auto de calitate, unde să pot lăsa mașina pe mâinile unor profesioniști adevărați. Mulți au refuzat să se ocupe de problema mea, propunând direct să-mi schimbe motorul. Băieții de la Perfect Garage și-au făcut treaba 100%, mi-au explicat clar care a fost cauza defecțiunii și mi-au reparat motorul exact la timp. Am economisit bani și sunt super mulțumit."
+    },
+    {
+      "name": "VASILII",
+      "avatar": "/image/testimonial3.png",
+      "rating": 5,
+      "text": "Un service auto excelent, servicii de calitate foarte bună, profesioniști la nivel înalt. Acum, pentru orice problemă sau defecțiune, acolo merg și îi recomand prietenilor. În concluzie, un service bun la prețuri corecte, îl recomand tuturor!"
+    },
+    {
+      "name": "NINA",
+      "avatar": "/image/testimonial4.png",
+      "rating": 5,
+      "text": "Diagnosticarea a fost făcută super rapid și calitativ. Băieții de la service și-au făcut treaba la cel mai înalt nivel, având grijă de fiecare detaliu. Vă recomand tuturor service-ul auto Perfect Garage – chiar oferă servicii bune la un preț accesibil! Data viitoare, sigur tot la voi vin!"
+    }
+  ]
+},
+"whyUs": {
+  "title": "DE CE NOI?",
+  "subtitle1": "Mai mult decat un",
+  "subtitle2": "service auto",
+  "illustrationAlt": "ilustrație echipă service",
+  "list": [
+    {
+      "title": "Lucrări executate la timp",
+      "description": "Efectuăm lucrările într-un timp scurt, dacă aveți nevoie urgentă de automobil. Calitatea nu este compromisă, iar clientul rămâne mulțumit și în siguranță.",
+      "image": "/svg/whyus1.svg"
+    },
+    {
+      "title": "Suntem experți în reparația motoarelor, chiar și a pieselor",
+      "description": "Multe service-uri urmăresc un profit rapid, recomandând direct înlocuirea unei piese sau a motorului. Noi, însă, respectăm clienții noștri și facem tot posibilul să reparăm. Mecanicii noștri sunt maeștri în repararea pieselor și motoarelor.",
+      "image": "/svg/whyus2.svg"
+    },
+    {
+      "title": "Mecanici cu experiență mare",
+      "description": "Toți specialiștii noștri au cel puțin 3 ani de experiență și sunt specializați în rezolvarea anumitor tipuri de probleme.",
+      "image": "/svg/whyus3.svg"
+    },
+    {
+      "title": "Cei mai experți în reparația instalației electrice",
+      "description": "Noi reparăm problemele pe care și centrele auto oficiale ale dealerilor le refuză.",
+      "image": "/svg/whyus4.svg"
+    }
+  ]
+}
 }

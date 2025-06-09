@@ -1,63 +1,39 @@
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+
+interface TeamMember {
+  name: string
+  role: string
+  image: string
+  alt: string
+}
 
 const TeamSection = () => {
-  const teamMembers = [
-    {
-      id: 1,
-      name: "ANDREI",
-      role: "MOTORIST",
-      image: "/image/team1.png",
-      alt: "Andrei - Motorist"
-    },
-    {
-      id: 2,
-      name: "GHEORGHE",
-      role: "MECANIC",
-      image: "/image/team2.png",
-      alt: "Gheorghe - Mecanic"
-    },
-    {
-      id: 3,
-      name: "VALERIU",
-      role: "ELECTRICIAN",
-      image: "/image/team3.png",
-      alt: "Valeriu - Electrician"
-    }
-  ];
+  const t = useTranslations('teamSection');
+  const members = t.raw('members') as TeamMember[];
 
   return (
     <div className="bg-[#222222] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        
         {/* Header Section */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20 font-montserrat">
           <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl xl:text-5xl mb-6 sm:mb-8 font-montserrat">
-            CUNOAȘTEȚÍ ECHIPA{' '}
-            <span className=" font-bold">NOASTRĂ DE TOP</span>
+            {t('title')}
+            <span className=" font-bold">{t('titleAccent')}</span>
           </h2>
-          
           <div className="max-w-4xl mx-auto">
             <p className="text-gray-300 text-base sm:text-lg lg:text-xl leading-relaxed font-manrope">
-              Suntem o echipă dedicată, pasionată de excelență și mereu pregătită să depășească 
-              așteptările. Fiecare membru contribuie cu talentul și energia sa pentru a transforma ideile 
-              în rezultate remarcabile.
+              {t('description')}
             </p>
           </div>
-          
-          {/* Decorative line */}
           <div className="w-64 h-1 bg-white mx-auto mt-6 sm:mt-8"></div>
         </div>
 
         {/* Team Members Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-          {teamMembers.map((member) => (
-            <div 
-              key={member.id}
-              className="group cursor-pointer"
-            >
-              {/* Card Container */}
+          {members.map((member, idx: number) => (
+            <div key={idx} className="group cursor-pointer">
               <div className="border-16 border-[#F5F5F5] rounded-3xl sm:rounded-4xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
-                
                 <div className="relative overflow-hidden bg-transparent">
                   <div className="aspect-[4/5] relative">
                     <Image
@@ -70,7 +46,6 @@ const TeamSection = () => {
                   </div>
                 </div>
 
-                {/* Text Content */}
                 <div className="text-center p-6 sm:p-8 bg-[#F5F5F5]">
                   <h3 className="text-black text-2xl sm:text-3xl font-bold mb-2 font-montserrat">
                     {member.name}

@@ -3,6 +3,7 @@ import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react'
 import Image from "next/image"
 import { cn } from "@/lib/utils"
+import { useTranslations } from "next-intl"
 
 interface Slide {
     title: string
@@ -11,6 +12,7 @@ interface Slide {
 }
 
 export default function Carousel({ slides }: { slides: Slide[] }) {
+    const t = useTranslations('carousel');
     const [currentSlide, setCurrentSlide] = useState(0)
 
     const [sliderRef, instanceRef] = useKeenSlider(
@@ -37,7 +39,7 @@ export default function Carousel({ slides }: { slides: Slide[] }) {
                     ></div>)}   
                 </div>
                 <div className="w-full">
-                    <p className="text-[#FF001D] text-[20px] text-right">DESPRE NOI</p>
+                    <p className="text-[#FF001D] text-[20px] text-right">{t('about-us')}</p>
                     <p className="text-[50px] max-[1060px]:text-[40px] max-[650px]:text-[30px] font-playfair font-bold text-white text-right mb-10 whitespace-pre max-[500px]:text-[25px] max-[400px]:text-[20px]">{slides[currentSlide].title}</p>
                 </div>
             </div>

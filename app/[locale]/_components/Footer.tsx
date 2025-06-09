@@ -1,45 +1,52 @@
 import Image from "next/image"
+import { useTranslations } from "next-intl"
+
 export default function Footer() {
+    const t = useTranslations("footer");
+
     return (
         <div className="bg-black grid grid-cols-[60%_40%] max-[800px]:grid-cols-1 max-[800px]:gap-10 mt-[50px] rounded-t-[50px] p-[40px] max-[800px]:p-[20px] font-montserrat">
             <div className="flex flex-col gap-10">
-                <Image src="/svgs/footer_logo.svg" width={80} height={80} alt="footer logo" />
-                <p className="text-[#8F9FA3] w-1/2 max-[800px]:w-full">De la schimburi de ulei de rutină până la reparații complexe ale motorului, oferim o gamă largă de servicii de reparații și întreținere auto pentru a răspunde tuturor nevoilor dvs. într-un singur loc convenabil.</p>
+                <Image src="/svgs/footer_logo.svg" width={80} height={80} alt={t("logoAlt")} />
+                <p className="text-[#8F9FA3] w-1/2 max-[800px]:w-full">{t("description")}</p>
             </div>
             <div className="flex flex-col justify-between gap-[100px] row-span-2">
                 <div className="flex flex-wrap gap-2 w-full justify-between text-[#8F9FA3] max-[800px]:flex-col">
-                    <p className="cursor-pointer">Despre noi.</p>
-                    <p className="cursor-pointer">Servicii.</p>
-                    <p className="cursor-pointer">De ce noi.</p>
-                    <p className="cursor-pointer">Recenzii.</p>
-                    <p className="cursor-pointer">Cum lucrăm cu clienții.</p>
-                    <p className="cursor-pointer">Contacte.</p>
+                    {Array.from({length: 6}).map((_, idx) => (
+                        <p className="cursor-pointer" key={idx}>{t(`links.${idx}`)}</p>
+                    ))}
                 </div>
                 <div className="flex w-full">
                     <div className="flex flex-col gap-10">
                         <div>
-                            <p className="font-bold text-[20px]">CONTACTE:</p>
-                            <p className="font-bold text-[18px]">Telefon:</p>
-                            <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px]">+373 60 410 999 <br />
-                                +373 60 410 888 <br />
-                                +373 60 911 155</p>
+                            <p className="font-bold text-[20px]">{t("contacts.heading")}</p>
+                            <p className="font-bold text-[18px]">{t("contacts.phone")}</p>
+                            <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px]">
+                                {t("contacts.phoneNumbers.0")}<br/>
+                                {t("contacts.phoneNumbers.1")}<br/>
+                                {t("contacts.phoneNumbers.2")}
+                            </p>
                         </div>
                         <div>
-                            <p className="font-bold text-[18px]">Orele de lucru:</p>
-                            <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px]">Luni - Vineri: 08:00 - 20:00 <br />
-                                Sâmbătă: 08:00 - 16:00</p>
+                            <p className="font-bold text-[18px]">{t("contacts.workingHours")}</p>
+                            <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px]">
+                                {t("contacts.workingTime.0")}<br/>
+                                {t("contacts.workingTime.1")}
+                            </p>
                         </div>
                         <div>
-                            <p className="font-bold text-[18px]">ADRESE:</p>
-                            <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px]">or.Chișinău, str.Petricani 23/1 <br />
-                                or.Chișinău, bd. Moscova 21</p>
+                            <p className="font-bold text-[18px]">{t("contacts.addresses")}</p>
+                            <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px]">
+                                {t("contacts.addressList.0")}<br/>
+                                {t("contacts.addressList.1")}
+                            </p>
                         </div>
                     </div>
                     <div className="self-end justify-self-end text-right w-full text-white">
-                        <p>Limbi</p>
+                        <p>{t("languagesTitle")}</p>
                         <div className="flex justify-end gap-5">
-                            <p>RU</p>
-                            <p className="text-[#8F9FA3]">RO</p>
+                            <p>{t("languageRU")}</p>
+                            <p className="text-[#8F9FA3]">{t("languageRO")}</p>
                         </div>
                     </div>
                 </div>
@@ -54,9 +61,9 @@ export default function Footer() {
                     <Image src="/svgs/whatsapp.svg" width={50} height={50} alt="whatsapp" className="cursor-pointer" />
                 </div>
                 <div className="self-end text-center justify-self-center w-full text-[#8F9FA3] px-[15%]">
-                    © 2025 Toate drepturile rezervate. Creat de Quant-Apps.
+                    {t("copyright")}
                 </div>
             </div>
-
-        </div>)
+        </div>
+    )
 }
