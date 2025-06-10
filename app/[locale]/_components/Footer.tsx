@@ -124,7 +124,7 @@ export default function Footer() {
         </div>
         <div className="self-end text-center justify-self-center w-full text-[#8F9FA3] px-[15%]">
           {t.rich("copyright", {
-            link: (chunks) => <Link href={"https://www.quant-apps.com/"} target="blank">{chunks}</Link>
+            link: (chunks) => <Link className="hover:text-[#836FFF] transition-all duration-700" href={"https://www.quant-apps.com/"} target="blank">{chunks}</Link>
           })}
         </div>
       </div>
