@@ -45,7 +45,6 @@ const Header = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // Menu animation variants
   const menuVariants = {
     closed: {
       y: "-100%",
@@ -136,12 +135,13 @@ const Header = () => {
             {NAV_ITEMS.map(({ key, id }) => (
               <motion.li
                 key={key}
-                className="cursor-pointer font-inter hover:text-[#FF001D] duration-250 hover:scale-105 transition-all"
+                className="cursor-pointer font-inter"
                 onClick={() => scrollToId(id)}
                 whileHover={{ 
                   scale: 1.1,
                   y: -2,
-                  transition: { duration: 0.2 }
+                  transition: { duration: 0.2 },
+                  color: '#FF001D'
                 }}
                 whileTap={{ scale: 0.95 }}
               >
