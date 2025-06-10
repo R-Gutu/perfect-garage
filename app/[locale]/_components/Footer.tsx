@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image"
+import Link from "next/link";
 import { useTranslations } from "next-intl"
 
 const NAV_KEYS = [
@@ -103,13 +104,13 @@ export default function Footer() {
       
       <div className="flex items-end animate-[slideInUp_0.8s_ease-out]">
         <div className="grid grid-cols-2 gap-2">
-          <div className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(59,130,246,0.7)] cursor-pointer">
+          <Link target="blank" href="https://www.facebook.com/perfectgarage.md/" className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(59,130,246,0.7)] cursor-pointer">
             <Image src="/svgs/facebook.svg" width={50} height={50} alt="facebook" />
-          </div>
+          </Link>
           <p></p>
-          <div className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(236,72,153,0.7)] cursor-pointer">
+          <Link target="blank" href="https://www.instagram.com/perfect.garage.md/" className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(236,72,153,0.7)] cursor-pointer">
             <Image src="/svgs/instagram.svg" width={50} height={50} alt="instagram" />
-          </div>
+          </Link>
           <p></p>
           <div className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(34,197,94,0.7)] cursor-pointer">
             <Image src="/svgs/telegram.svg" width={50} height={50} alt="telegram" />
