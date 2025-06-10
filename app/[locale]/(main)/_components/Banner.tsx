@@ -17,10 +17,10 @@ const Banner = () => {
             </h1>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 font-manrope pt-2">
-              <button className="cursor-pointer bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-semibold hover:bg-gray-100 transition-colors text-sm sm:text-base w-full sm:w-auto">
+              <button className="cursor-pointer bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-semibold hover:bg-gray-100 transition-all text-sm sm:text-base w-full sm:w-auto hover:scale-105 duration-200">
                 {t('bookBtn')}
               </button>
-              <button className="cursor-pointer border border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-semibold hover:bg-white hover:text-red-500 transition-colors text-sm sm:text-base w-full sm:w-auto">
+              <button className="cursor-pointer border border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-semibold hover:bg-white duration-200 hover:text-red-500 transition-all text-sm sm:text-base w-full sm:w-auto hover:scale-105">
                 {t('consultBtn')}
               </button>
             </div>

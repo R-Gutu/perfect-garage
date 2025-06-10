@@ -40,12 +40,12 @@ const Hero = () => {
             </p>
             
             <div className="ml-2 sm:ml-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
-              <button className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-2 cursor-pointer bg-red-600 hover:bg-red-700 transition-colors duration-300 px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-white group text-sm sm:text-base">
+              <button className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-2 cursor-pointer bg-red-600 hover:bg-red-700 transition-all duration-300 px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-white group text-sm sm:text-base hover:scale-105">
                 <span className="font-manrope">{t("bookBtn")}</span>
                 <MdKeyboardArrowRight className="group-hover:translate-x-1 transition-transform duration-300" size={20} />
               </button>
               
-              <button className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-3 cursor-pointer bg-transparent border border-gray-400 hover:bg-white hover:text-gray-800 transition-all duration-300 px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-white text-sm sm:text-base">
+              <button className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-3 cursor-pointer bg-transparent border border-gray-400 hover:bg-white hover:text-gray-800 transition-all duration-300 px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-white text-sm sm:text-base hover:scale-105 ">
                 <BsChatText size={16} />
                 <span className="font-manrope">{t("consultBtn")}</span>
               </button>
