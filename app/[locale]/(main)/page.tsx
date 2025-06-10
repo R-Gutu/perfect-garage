@@ -1,5 +1,4 @@
 
-import { useTranslations } from "next-intl"
 import Hero from "./_components/Hero";
 import Slides from "./_components/Slides";
 import Services from "./_components/Services";
@@ -10,7 +9,6 @@ import Testimonials from "./_components/Testimonials";
 import LogoSlider from "./_components/LogoSlider";
 import HowWeWork from "./_components/HowWeWork";
 const page = () => {
-  const t = useTranslations('home');
   return (
     <div className="font-inter">
       <Hero />
