@@ -2,6 +2,8 @@
 import Image from "next/image"
 import Link from "next/link";
 import { useTranslations } from "next-intl"
+import { useLocale } from "next-intl";
+import { cn } from "@/lib/utils";
 
 const NAV_KEYS = [
   { key: "about", id: "about" },
@@ -14,6 +16,7 @@ const NAV_KEYS = [
 
 export default function Footer() {
   const t = useTranslations("footer");
+  const locale = useLocale();
 
   const scrollToId = (id: string) => {
     const element = document.getElementById(id);
@@ -91,12 +94,12 @@ export default function Footer() {
               {t("languagesTitle")}
             </p>
             <div className="flex justify-end gap-5">
-              <p className="cursor-pointer transition-all duration-300 hover:text-blue-400 hover:scale-110 hover:-translate-y-1">
+              <Link href="/ru" className={cn(`text-[#8F9FA3] cursor-pointer transition-all duration-300 hover:text-blue-400 hover:scale-110 hover:-translate-y-1`, {'text-white': locale === "ru"})}>
                 {t("languageRU")}
-              </p>
-              <p className="text-[#8F9FA3] cursor-pointer transition-all duration-300 hover:text-white hover:scale-110 hover:-translate-y-1">
+              </Link>
+              <Link href="/ro" className={cn(`text-[#8F9FA3] cursor-pointer transition-all duration-300 hover:text-blue-400 hover:scale-110 hover:-translate-y-1`, {'text-white': locale === "ro"})}>
                 {t("languageRO")}
-              </p>
+              </Link>
             </div>
           </div>
         </div>
@@ -120,7 +123,9 @@ export default function Footer() {
           </Link>
         </div>
         <div className="self-end text-center justify-self-center w-full text-[#8F9FA3] px-[15%]">
-          {t("copyright")}
+          {t.rich("copyright", {
+            link: (chunks) => <Link href={"https://www.quant-apps.com/"} target="blank">{chunks}</Link>
+          })}
         </div>
       </div>
       
