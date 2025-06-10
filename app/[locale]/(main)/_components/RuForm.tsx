@@ -1,5 +1,5 @@
 "use client"
-import { Bitrix24Form } from 'react-bitrix24-form';
+import { Bitrix24Form } from "./Bitrix24Form";
 
 export default function RuForm() {
   return (
