@@ -23,7 +23,7 @@ const Testimonials = () => {
     ))
   );
   const renderTestimonialCard = (testimonial: Testimonial, isFullHeight = false) => (
-    <div id='testimonials' className={`border-2 border-red-500 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 ${isFullHeight ? 'h-full' : ''} flex flex-col`}>
+    <div id='testimonials' className={`border-2 border-red-500 rounded-2xl sm:rounded-3xl p-4 sm:p-4 lg:p-6 ${isFullHeight ? 'h-full' : ''} flex flex-col`}>
       <div className="flex items-center mb-4 sm:mb-6">
         <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
           <Image
@@ -52,21 +52,21 @@ const Testimonials = () => {
 
   return (
     <div className="bg-[#222222] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[95%] mx-auto">
         <div className="text-start mb-12 sm:mb-16 lg:mb-20">
           <h2 className="text-white text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold font-montserrat">
             {t("title")}
           </h2>
         </div>
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-10">
-          <div className="flex-1 flex">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-6 sm:gap-8 lg:gap-10 items-start">
+          <div className="flex">
             {renderTestimonialCard(testimonials[0], true)}
           </div>
-          <div className="flex-1 space-y-6 sm:space-y-8 lg:space-y-10">
+          <div className="space-y-6 sm:space-y-8 lg:space-y-10">
             {renderTestimonialCard(testimonials[1])}
             {renderTestimonialCard(testimonials[2])}
           </div>
-          <div className="flex-1 flex">
+          <div className="flex">
             {renderTestimonialCard(testimonials[3], true)}
           </div>
         </div>
