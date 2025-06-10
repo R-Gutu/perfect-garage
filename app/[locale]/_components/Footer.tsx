@@ -112,12 +112,12 @@ export default function Footer() {
             <Image src="/svgs/instagram.svg" width={50} height={50} alt="instagram" />
           </Link>
           <p></p>
-          <div className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(34,197,94,0.7)] cursor-pointer">
+          <Link href={"https://t.me/+37360410999"} className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(34,197,94,0.7)] cursor-pointer">
             <Image src="/svgs/telegram.svg" width={50} height={50} alt="telegram" />
-          </div>
-          <div className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(34,197,94,0.7)] cursor-pointer">
+          </Link>
+          <Link href={"https://wa.me/37360410999"} className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(34,197,94,0.7)] cursor-pointer">
             <Image src="/svgs/whatsapp.svg" width={50} height={50} alt="whatsapp" />
-          </div>
+          </Link>
         </div>
         <div className="self-end text-center justify-self-center w-full text-[#8F9FA3] px-[15%]">
           {t("copyright")}
