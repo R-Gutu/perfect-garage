@@ -1,11 +1,14 @@
+'use client'
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { BsTelephone } from "react-icons/bs";
+import { useState } from 'react';
+import Modal from './Modal';
 
 const Banner = () => {
   const t = useTranslations('banner');
-
+  const [modalOpen, setModalOpen] = useState(false)
   return (
     <div className="bg-[#222222] py-4 sm:py-8 lg:py-12 xl:py-16 px-2 sm:px-4 lg:px-6 xl:px-8">
       <div className="bg-[#FF001D] text-white p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16 rounded-xl sm:rounded-2xl max-w-7xl mx-auto">
@@ -19,7 +22,9 @@ const Banner = () => {
             </h1>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 font-manrope pt-2">
-              <button className="cursor-pointer bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-semibold hover:bg-gray-100 transition-all text-sm sm:text-base w-full sm:w-auto hover:scale-105 duration-200">
+              <button
+                onClick={() => setModalOpen(true)}
+                className="cursor-pointer bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-semibold hover:bg-gray-100 transition-all text-sm sm:text-base w-full sm:w-auto hover:scale-105 duration-200">
                 {t('bookBtn')}
               </button>
               <Link href="tel:+373(60)410999" className="flex items-center justify-center gap-2 cursor-pointer border border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-semibold hover:bg-white duration-200 hover:text-red-500 transition-all text-sm sm:text-base w-full sm:w-auto hover:scale-105">
@@ -50,6 +55,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
+      {modalOpen && <Modal onClose={() => setModalOpen(false)} />}
     </div>
   );
 };
