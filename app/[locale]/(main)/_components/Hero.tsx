@@ -1,13 +1,16 @@
+'use client'
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { BsTelephone } from "react-icons/bs";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import Modal from "./Modal";
+import { useState } from "react";
 
 const Hero = () => {
   const t = useTranslations('hero');
-
+  const [modalOpen, setModalOpen] = useState(false)
   return (
     <div className="min-h-screen w-full relative flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -41,7 +44,9 @@ const Hero = () => {
             </p>
             
             <div className="ml-2 sm:ml-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
-              <button className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-2 cursor-pointer bg-red-600 hover:bg-red-700 transition-all duration-300 px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-white group text-sm sm:text-base hover:scale-105">
+              <button
+              onClick={() => setModalOpen(true)}
+               className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-2 cursor-pointer bg-red-600 hover:bg-red-700 transition-all duration-300 px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-white group text-sm sm:text-base hover:scale-105">
                 <span className="font-manrope">{t("bookBtn")}</span>
                 <MdKeyboardArrowRight className="group-hover:translate-x-1 transition-transform duration-300" size={20} />
               </button>
@@ -56,6 +61,7 @@ const Hero = () => {
       </div>
       
       <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 to-transparent z-10"></div>
+      {modalOpen && <Modal onClose={() => setModalOpen(false)} />}
     </div>
   )
 }
