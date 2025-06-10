@@ -1,4 +1,5 @@
 
+'use client'
 import Hero from "./_components/Hero";
 import Slides from "./_components/Slides";
 import Services from "./_components/Services";
@@ -8,16 +9,20 @@ import Team from "./_components/Team";
 import Testimonials from "./_components/Testimonials";
 import LogoSlider from "./_components/LogoSlider";
 import HowWeWork from "./_components/HowWeWork";
-const page = () => {
+import Modal from "./_components/Modal";
+import { useState } from "react";
+const Page = () => {
+    const [modalOpen, setModalOpen] = useState(false)
   return (
     <div className="font-inter">
-      <Hero />
+      {modalOpen && <Modal onClose={() => setModalOpen(false)} />}
+      <Hero setModalOpen={setModalOpen} />
       <Slides />
       <Services />
       <WhyUs />
       <LogoSlider />
       <HowWeWork />
-      <Banner />
+      <Banner setModalOpen={setModalOpen} />
       <Team />
       <Testimonials />
     </div>
@@ -25,4 +30,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -1,16 +1,12 @@
-'use client'
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { BsTelephone } from "react-icons/bs";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import Modal from "./Modal";
-import { useState } from "react";
 
-const Hero = () => {
+const Hero = ({ setModalOpen }: { setModalOpen: (bool: boolean) => void }) => {
   const t = useTranslations('hero');
-  const [modalOpen, setModalOpen] = useState(false)
   return (
     <div className="min-h-screen w-full relative flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -61,7 +57,6 @@ const Hero = () => {
       </div>
 
       <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 to-transparent z-10"></div>
-      {modalOpen && <Modal onClose={() => setModalOpen(false)} />}
     </div>
   )
 }

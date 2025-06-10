@@ -28,7 +28,7 @@ export default function Modal({ onClose } : { onClose: () => void }) {
 
     return (
         <div 
-            className="fixed no-doc-scroll w-full h-full bg-red-500/80 z-50 flex justify-center items-center"
+            className="fixed no-doc-scroll w-full h-full bg-red-500/80 z-[10000] flex justify-center items-center"
             onClick={handleBackdropClick}
         >
             <div className="w-[50%] max-[750px]:w-[75%] max-[425px]:w-[90%]">
