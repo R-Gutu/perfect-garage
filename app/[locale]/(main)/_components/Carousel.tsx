@@ -31,17 +31,25 @@ export default function Carousel({ slides }: { slides: Slide[] }) {
     return (
         <div className="flex flex-col items-center justify-center">
             <div className="flex justify-between max-[940px]:grid-cols-1 w-[80%] mb-[35px]">
-                <div className="flex w-full justify-center items-center gap-2 max-[940px]:hidden">
+                <div className="flex w-[50%] justify-center items-center gap-2 max-[940px]:hidden">
                     {slides.map((e, i) => <div
                         key={i}
                         className={cn(`bg-[#FF001D] w-[12px] h-[12px] rounded-full cursor-pointer`, { 'bg-[#0000004D]': currentSlide !== i })}
                         onClick={() => instanceRef.current?.moveToIdx(i)}
-                    ></div>)}   
+                    ></div>)}
                 </div>
-                <div className="w-full">
-                    <p className="text-[#FF001D] text-[20px] text-right">{t('about-us')}</p>
+                <div className="w-full text-center sm:text-end mb-8 sm:mb-12 font-montserrat">
+                    <p className="text-red-500 text-lg sm:text-xl font-semibold tracking-wide uppercase mb-2">
+                        {t('about-us')}
+                    </p>
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-montserrat">
+                        {slides[currentSlide].title}
+                    </h2>
+                </div>
+                {/* <div className=" font-montserrat">
+                    <p className="text-[#FF001D] text-[20px] text-right">{}</p>
                     <p className="text-[50px] max-[1060px]:text-[40px] max-[650px]:text-[30px] font-playfair font-bold text-white text-right mb-10 whitespace-pre max-[500px]:text-[25px] max-[400px]:text-[20px]">{slides[currentSlide].title}</p>
-                </div>
+                </div> */}
             </div>
             <div className="grid grid-cols-[10%_80%_10%] max-[940px]:grid-cols-1 w-full">
                 <div className="self-center flex justify-center max-[940px]:hidden">

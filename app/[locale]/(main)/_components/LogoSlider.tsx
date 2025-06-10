@@ -7,7 +7,9 @@ export default function LogoSlider() {
     const t = useTranslations('logoSlider')
     return (
         <div className='py-[30px]'>
-            <p className='font-bold font-montserrat text-[45px] text-center pb-[30px]'>{t('title')}</p>
+            <p className='font-bold font-montserrat px-3 text-center pb-[30px] text-[25px] sm:text-[30px] sm:px-[15%] md:text-[45px]'>
+                {t('title')}
+            </p>
             <Slider
                 width='4000px'
                 duration={20}
