@@ -4,6 +4,7 @@ import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
+import Widget from "./_components/Widget";
 import { domAnimation, LazyMotion } from "motion/react"
 
 const inter = Inter({
@@ -39,6 +40,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
+            <Widget />
           </NextIntlClientProvider>
         </LazyMotion>
       </body>
