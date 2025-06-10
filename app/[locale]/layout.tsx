@@ -6,6 +6,7 @@ import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 import Widget from "./_components/Widget";
 import { domAnimation, LazyMotion } from "motion/react"
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
@@ -34,6 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${montserrat.variable} ${manrope.variable} ${inter.variable} antialiased`}>
+      <GoogleTagManager gtmId="GTM-5WG3WLMM" />
       <body>
         <LazyMotion features={domAnimation}>
           <NextIntlClientProvider >
