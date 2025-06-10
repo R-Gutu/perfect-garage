@@ -1,4 +1,4 @@
-import { ReactElement, useState } from "react"
+import { ReactElement, useState, useEffect } from "react"
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react'
 import Image from "next/image"
@@ -14,6 +14,7 @@ interface Slide {
 export default function Carousel({ slides }: { slides: Slide[] }) {
     const t = useTranslations('carousel');
     const [currentSlide, setCurrentSlide] = useState(0)
+    const [isMobile, setIsMobile] = useState(false)
 
     const [sliderRef, instanceRef] = useKeenSlider(
         {
@@ -27,6 +28,40 @@ export default function Carousel({ slides }: { slides: Slide[] }) {
             // add plugins here
         ]
     )
+
+    // Check screen size and set up auto-play
+    useEffect(() => {
+        const checkScreenSize = () => {
+            setIsMobile(window.innerWidth < 940)
+        }
+
+        // Initial check
+        checkScreenSize()
+
+        // Add event listener for resize
+        window.addEventListener('resize', checkScreenSize)
+
+        return () => {
+            window.removeEventListener('resize', checkScreenSize)
+        }
+    }, [])
+
+    // Auto-play effect for mobile
+    useEffect(() => {
+        let interval: NodeJS.Timeout | null = null
+
+        if (isMobile && instanceRef.current) {
+            interval = setInterval(() => {
+                instanceRef.current?.next()
+            }, 5000) // 1 second interval
+        }
+
+        return () => {
+            if (interval) {
+                clearInterval(interval)
+            }
+        }
+    }, [isMobile, instanceRef])
 
     return (
         <div className="flex flex-col items-center justify-center">
