@@ -64,7 +64,7 @@ const Header = () => {
           <ul className="flex gap-5 items-center text-nowrap">
             {NAV_ITEMS.map(({ key, id }) => (
               <li
-                className="cursor-pointer font-inter"
+                className="cursor-pointer font-inter hover:text-[#FF001D] duration-250 hover:scale-105 transition-all"
                 onClick={() => scrollToId(id)}
                 key={key}
               >
