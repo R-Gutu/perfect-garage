@@ -35,14 +35,14 @@ export default function Footer() {
           {t("description")}
         </p>
       </div>
-      
+
       <div className="flex flex-col justify-between gap-[100px] row-span-2 animate-[slideInRight_0.8s_ease-out]">
         {/* i18n menu */}
         <div className="flex flex-wrap gap-2 w-full justify-between text-[#8F9FA3] max-[800px]:flex-col">
           {NAV_KEYS.map(({ key, id }, index) => (
-            <p 
+            <p
               className="cursor-pointer relative transition-all duration-300 hover:text-white hover:scale-105 hover:-translate-y-1 group max-w-[200px]"
-              key={key} 
+              key={key}
               onClick={() => scrollToId(id)}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -51,7 +51,7 @@ export default function Footer() {
             </p>
           ))}
         </div>
-        
+
         <div className="flex w-full">
           <div className="flex flex-col gap-10">
             <div className="transform transition-all duration-300 hover:translate-x-2 hover:scale-105 group">
@@ -67,7 +67,7 @@ export default function Footer() {
                 {t("contacts.phoneNumbers.2")}
               </p>
             </div>
-            
+
             <div className="transform transition-all duration-300 hover:translate-x-2 hover:scale-105 group">
               <p className="font-bold text-[18px] transition-colors duration-300 group-hover:text-yellow-400">
                 {t("contacts.workingHours")}
@@ -77,7 +77,7 @@ export default function Footer() {
                 {t("contacts.workingTime.1")}
               </p>
             </div>
-            
+
             <div className="transform transition-all duration-300 hover:translate-x-2 hover:scale-105 group">
               <p className="font-bold text-[18px] transition-colors duration-300 group-hover:text-purple-400">
                 {t("contacts.addresses")}
@@ -88,23 +88,23 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          
+
           <div className="self-end justify-self-end text-right w-full text-white">
             <p className="">
               {t("languagesTitle")}
             </p>
             <div className="flex justify-end gap-5">
-              <Link href="/ru" className={cn(`text-[#8F9FA3] cursor-pointer transition-all duration-300 hover:text-blue-400 hover:scale-110 hover:-translate-y-1`, {'text-white': locale === "ru"})}>
+              <Link href="/ru" className={cn(`text-[#8F9FA3] cursor-pointer transition-all duration-300 hover:text-blue-400 hover:scale-110 hover:-translate-y-1`, { 'text-white': locale === "ru" })}>
                 {t("languageRU")}
               </Link>
-              <Link href="/ro" className={cn(`text-[#8F9FA3] cursor-pointer transition-all duration-300 hover:text-blue-400 hover:scale-110 hover:-translate-y-1`, {'text-white': locale === "ro"})}>
+              <Link href="/ro" className={cn(`text-[#8F9FA3] cursor-pointer transition-all duration-300 hover:text-blue-400 hover:scale-110 hover:-translate-y-1`, { 'text-white': locale === "ro" })}>
                 {t("languageRO")}
               </Link>
             </div>
           </div>
         </div>
       </div>
-      
+
       <div className="flex items-end animate-[slideInUp_0.8s_ease-out]">
         <div className="grid grid-cols-2 gap-2">
           <Link target="blank" href="https://www.facebook.com/perfectgarage.md/" className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(59,130,246,0.7)] cursor-pointer">
@@ -128,7 +128,7 @@ export default function Footer() {
           })}
         </div>
       </div>
-      
+
       <style jsx>{`
         @keyframes slideInLeft {
           from {
