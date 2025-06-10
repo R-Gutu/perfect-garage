@@ -6,8 +6,8 @@ export default function HowWeWork() {
 
     return (
         <div id="howWeWork" className="font-montserrat text-center">
-            <p className="font-bold text-[45px]">{t("title")}</p>
-            <p className="text-[#FF001D] text-[20px]">{t("subtitle")}</p>
+            <p className="font-bold text-[45px] md:text-[45px] sm:text-[36px] xs:text-[28px]">{t("title")}</p>
+            <p className="text-[#FF001D] text-[20px] md:text-[20px] sm:text-[18px] xs:text-[16px]">{t("subtitle")}</p>
             <div className="grid grid-cols-[2fr_1fr_2fr_1fr_2fr] px-[100px] max-[900px]:px-[10px] max-[900px]:grid-cols-1">
                 {/* Step 1 */}
                 <div className="flex flex-col items-center">
