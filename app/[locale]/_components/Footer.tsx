@@ -55,10 +55,10 @@ export default function Footer() {
         <div className="flex w-full">
           <div className="flex flex-col gap-10">
             <div className="transform transition-all duration-300 hover:translate-x-2 hover:scale-105 group">
-              <p className="font-bold text-[20px] transition-colors duration-300 group-hover:text-blue-400">
+              <p className="font-bold text-[20px] transition-colors duration-300 group-hover:text-blue-400 text-white">
                 {t("contacts.heading")}
               </p>
-              <p className="font-bold text-[18px] transition-colors duration-300 group-hover:text-green-400">
+              <p className="font-bold text-[18px] transition-colors duration-300 group-hover:text-green-400 text-white">
                 {t("contacts.phone")}
               </p>
               <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px] transition-all duration-300 group-hover:text-white group-hover:translate-x-1">
@@ -69,7 +69,7 @@ export default function Footer() {
             </div>
 
             <div className="transform transition-all duration-300 hover:translate-x-2 hover:scale-105 group">
-              <p className="font-bold text-[18px] transition-colors duration-300 group-hover:text-yellow-400">
+              <p className="font-bold text-[18px] transition-colors duration-300 text-white group-hover:text-yellow-400">
                 {t("contacts.workingHours")}
               </p>
               <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px] transition-all duration-300 group-hover:text-white group-hover:translate-x-1">
@@ -79,7 +79,7 @@ export default function Footer() {
             </div>
 
             <div className="transform transition-all duration-300 hover:translate-x-2 hover:scale-105 group">
-              <p className="font-bold text-[18px] transition-colors duration-300 group-hover:text-purple-400">
+              <p className="font-bold text-[18px] transition-colors duration-300 group-hover:text-purple-400 text-white">
                 {t("contacts.addresses")}
               </p>
               <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px] transition-all duration-300 group-hover:text-white group-hover:translate-x-1">
