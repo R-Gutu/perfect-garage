@@ -7,7 +7,6 @@ export default function Socials() {
             image: "/svg/telegram.svg",
             name: "telegram"
         }
-
     ]
     return (<div className="flex flex-col gap-2 fixed right-[58px] bottom-[120px]">
         {socials.map(({ link, image, name }, i) => (<Link key={i} href={link} className="cursor-pointer hover:scale-120 transition-transform" target="blank">
