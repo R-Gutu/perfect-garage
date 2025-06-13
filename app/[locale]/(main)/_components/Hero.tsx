@@ -22,16 +22,15 @@ const Hero = ({ setModalOpen }: { setModalOpen: (bool: boolean) => void }) => {
 
       <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
         <div className={cn("max-w-7xl mx-auto", "max-md:flex max-md:justify-center")}>
-          <div className="max-w-2xl lg:max-w-3xl xl:max-w-4xl">
+          <div className="">
             <div className="w-fit bg-[url('/image/redBG.png')] bg-cover bg-center flex items-center justify-center px-4 sm:px-6 md:px-8 mb-4 sm:mb-6">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-wide font-montserrat text-center">
                 {t("brand")}
               </h1>
             </div>
 
-            <h2 className="ml-2 sm:ml-4 text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight uppercase font-montserrat">
-              {t("headline1")}<br />
-              {t("headline2")}<br />
+            <h2 className="ml-2 sm:ml-4 text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight uppercase font-montserrat w-full">
+              {t("headline1")} <br />
               <span className="block sm:inline">{t("headline3")}</span>
             </h2>
 

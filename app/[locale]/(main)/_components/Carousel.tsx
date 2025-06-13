@@ -77,7 +77,7 @@ export default function Carousel({ slides }: { slides: Slide[] }) {
                     <p className="text-red-500 text-lg sm:text-xl font-semibold tracking-wide uppercase mb-2">
                         {t('about-us')}
                     </p>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-montserrat max-[425px]:text-[23px]">
+                    <h2 className="text-3xl h-[90px] sm:text-4xl md:text-5xl font-bold text-white font-montserrat max-[425px]:text-[23px]">
                         {slides[currentSlide].title}
                     </h2>
                 </div>
@@ -98,7 +98,7 @@ export default function Carousel({ slides }: { slides: Slide[] }) {
                 </div>
                 <div ref={sliderRef} className="keen-slider flex w-full">
                     {slides.map((s, i) => (<div key={i} className='w-full keen-slider__slide grid grid-cols-2 max-[940px]:grid-cols-1'>
-                        <p className="whitespace-pre-wrap z-20 self-center py-[60px] pl-[60px] max-[940px]:px-[20px] text-[#DCDCDC] font-montserrat">{s.description}</p>
+                        <p className="whitespace-pre-wrap z-20 text-[25px] self-center py-[60px] pl-[60px] max-[940px]:px-[20px] text-[#DCDCDC] font-montserrat max-[525px]:text-[15px]">{s.description}</p>
                         <Image
                             src={"/svgs/gray_thing.svg"}
                             width={1000}
@@ -124,7 +124,7 @@ export default function Carousel({ slides }: { slides: Slide[] }) {
                     />
                 </div>
             </div>
-            <div className="flex w-full justify-center items-center gap-2">
+            <div className="flex w-full justify-center items-center gap-2 pb-10 min-[940px]:hidden">
                 {slides.map((e, i) => <div
                     key={i}
                     className={cn(`bg-[#FF001D] w-[12px] h-[12px] rounded-full cursor-pointer`, { 'bg-[#0000004D]': currentSlide !== i })}

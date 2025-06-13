@@ -16,7 +16,9 @@ const Banner = ({ setModalOpen }: { setModalOpen: (bool: boolean) => void }) => 
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight font-montserrat">
               {t('headline')}
               <br />
-              <span className="underline text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl">{t('price')}</span>
+              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl bg-white text-black"><span className='line-through'>600</span>&nbsp;{t('price')}</span>
+              <br />
+              {t('headline2')}
             </h1>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 font-manrope pt-2">

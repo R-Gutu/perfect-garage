@@ -16,7 +16,7 @@ export default function Slides() {
     return (
         <div id='about' className='flex flex-col justify-center items-center py-20 w-full relative overflow-hidden'>
             <Carousel slides={slides} />
-            <div className='text-white max-[940px]:translate-y-[15px] translate-y-[-15px] grid grid-cols-4 max-[700px]:grid-cols-2 max-[500px]:grid-cols-1 w-full bg-[linear-gradient(180deg,_#FF001D_0%,_#59010B_178.69%)] font-montserrat'>
+            <div className='text-white min-[940px]:translate-y-[-25px] grid grid-cols-4 max-[700px]:grid-cols-2 max-[500px]:grid-cols-1 w-full bg-[linear-gradient(180deg,_#FF001D_0%,_#59010B_178.69%)] font-montserrat'>
                 <div className='flex flex-col items-center text-center'>
                     <p className='font-bold text-[80px] max-[900px]:text-[60px]'>{t("stats.0.value")}</p>
                     <p className='translate-y-[-15px]'>{t("stats.0.label")}</p>

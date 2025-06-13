@@ -40,16 +40,6 @@ export default function HowWeWork() {
                     <p>{t("steps.2.desc")}</p>
                 </div>
             </div>
-            <div className="flex justify-center py-[20px] min-[900px]:hidden">
-                <Image src="/svgs/down_path.svg" width={15} height={15} alt="path" />
-            </div>
-            <div className="flex justify-center min-[900px]:pt-[100px]">
-                <div className="flex flex-col items-center w-[20%] max-[900px]:w-full text-white">
-                    <Image src="/svgs/money.svg" width={150} height={150} alt={t("steps.3.iconAlt")} />
-                    <p className="font-bold text-[20px]">{t("steps.3.title")}</p>
-                    <p>{t("steps.3.desc")}</p>
-                </div>
-            </div>
         </div>
     )
 }

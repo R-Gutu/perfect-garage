@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 interface Testimonial {
   name: string
   avatar: string
   rating: number
   text: string
+  link: string
 }
 
 const Testimonials = () => {
@@ -23,9 +25,9 @@ const Testimonials = () => {
     ))
   );
   const renderTestimonialCard = (testimonial: Testimonial, isFullHeight = false) => (
-    <div id='testimonials' className={`border-2 border-red-500 rounded-2xl sm:rounded-3xl p-4 sm:p-4 lg:p-6 ${isFullHeight ? 'h-full' : ''} flex flex-col`}>
+    <Link href={testimonial.link} target='blank' id='testimonials' className={`border-2 border-red-500 rounded-2xl sm:rounded-3xl p-4 sm:p-4 lg:p-6 ${isFullHeight ? 'h-full' : ''} flex flex-col cursor-pointer hover:scale-110 transition-transform`}>
       <div className="flex items-center mb-4 sm:mb-6">
-        <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
+        <div className="w-12 h-12 sm:w-16 sm:h-16 overflow-hidden mr-4 flex-shrink-0">
           <Image
             src={testimonial.avatar}
             alt={`${testimonial.name} avatar`}
@@ -47,7 +49,7 @@ const Testimonials = () => {
       <p className="text-gray-300 text-sm sm:text-base leading-relaxed font-manrope flex-grow">
         {testimonial.text}
       </p>
-    </div>
+    </Link>
   );
 
   return (

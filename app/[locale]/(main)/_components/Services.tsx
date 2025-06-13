@@ -8,7 +8,7 @@ import { useState } from "react";
 const Services = () => {
   const t = useTranslations('services');
   const serviceCount = 8;
-  const [hoveredCard, setHoveredCard] = useState<number| null>(null);
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   const cardVariants = {
     initial: {
@@ -75,21 +75,13 @@ const Services = () => {
   return (
     <section id="services" className="bg-[#222222] py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <motion.div 
+        <motion.div
           className="text-center sm:text-end mb-8 sm:mb-12 font-montserrat"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <motion.p 
-            className="text-red-500 text-lg sm:text-xl font-semibold tracking-wide uppercase mb-2"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-          >
-            {t('subtitle')}
-          </motion.p>
-          <motion.h2 
+          <motion.h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-montserrat"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -102,7 +94,7 @@ const Services = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-6 font-manrope">
           {Array.from({ length: serviceCount }).map((_, idx) => {
             const isHovered = hoveredCard === idx;
-            
+
             return (
               <motion.div
                 key={idx}
@@ -118,27 +110,34 @@ const Services = () => {
               >
                 <div className="flex flex-col relative h-full min-h-[180px] sm:min-h-[200px] lg:min-h-[220px] z-10">
                   <div className="flex items-start justify-between mb-2 sm:mb-4">
-                    <motion.h3 
-                      className="text-white text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-4 leading-tight font-montserrat pr-2"
-                      variants={titleVariants}
-                    >
-                      {t(`list.${idx}.title`)}
-                    </motion.h3>
+                    <div>
+                      <motion.h3
+                        className="text-white text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-4 leading-tight font-montserrat pr-2"
+                        variants={titleVariants}
+                      >
+                        {t(`list.${idx}.title`)}
+                      </motion.h3>
+                      <motion.p
+                        variants={titleVariants}
+                      >
+                        {t(`list.${idx}.description`)}
+                      </motion.p>
+                    </div>
                     {t.raw(`list.${idx}.hasDiscount`) && (
-                      <motion.div 
+                      <motion.div
                         className="z-10 flex-shrink-0"
                         initial={{ scale: 0, rotate: -10 }}
-                        animate={{ 
-                          scale: 1, 
+                        animate={{
+                          scale: 1,
                           rotate: 0,
-                          transition: { 
+                          transition: {
                             delay: 0.1 * idx,
                             type: "spring",
                             stiffness: 200,
                             damping: 10
                           }
                         }}
-                        whileHover={{ 
+                        whileHover={{
                           scale: 1.1,
                           rotate: 5,
                           transition: { duration: 0.2 }
@@ -155,7 +154,7 @@ const Services = () => {
                   </div>
 
                   <div className="flex items-center justify-between mt-auto z-10 relative">
-                    <motion.p 
+                    <motion.p
                       className="text-sm sm:text-base font-semibold"
                       animate={{
                         color: isHovered ? "rgb(255, 255, 255)" : "rgb(209, 213, 219)" // white : gray-300
@@ -166,8 +165,8 @@ const Services = () => {
                     </motion.p>
                   </div>
                 </div>
-                  
-                <motion.div 
+
+                <motion.div
                   className="absolute bottom-0 right-0 w-1/2 h-1/2 sm:w-2/3 sm:h-2/3 lg:w-3/5 lg:h-3/5"
                   variants={imageVariants}
                 >
@@ -179,7 +178,7 @@ const Services = () => {
                   />
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                   className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl sm:rounded-2xl"
                   variants={overlayVariants}
                 />
@@ -188,7 +187,7 @@ const Services = () => {
                 <motion.div
                   className="absolute inset-0 rounded-2xl sm:rounded-4xl"
                   animate={{
-                    boxShadow: isHovered 
+                    boxShadow: isHovered
                       ? "0 0 30px rgba(220, 38, 38, 0.3), 0 0 60px rgba(220, 38, 38, 0.1)"
                       : "0 0 0px rgba(220, 38, 38, 0)"
                   }}
