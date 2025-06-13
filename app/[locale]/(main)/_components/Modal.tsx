@@ -28,10 +28,10 @@ export default function Modal({ onClose } : { onClose: () => void }) {
 
     return (
         <div 
-            className="fixed no-doc-scroll w-full h-full bg-red-500/80 z-[10000] flex justify-center items-center"
+            className="fixed no-doc-scroll w-full h-full backdrop-blur-md z-[10000] flex justify-center items-center"
             onClick={handleBackdropClick}
         >
-            <div className="w-[50%] h-[80%] max-[750px]:w-[75%] max-[480px]:w-full overflow-y-scroll">
+            <div className="w-[50%] h-[80%] max-[750px]:w-[75%] max-[480px]:w-full overflow-y-scroll bg-white rounded-[15px] max-w-[724px]">
                 {/* Close button */}
                 <button
                     onClick={onClose}
