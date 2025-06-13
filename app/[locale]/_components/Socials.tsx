@@ -6,22 +6,7 @@ export default function Socials() {
             link: "https://t.me/+37360410999",
             image: "/svg/telegram.svg",
             name: "telegram"
-        },
-        {
-            link: "https://www.facebook.com/perfectgarage.md/",
-            image: "/svg/facebook.svg",
-            name: "facebook"
-        },
-        {
-            link: "https://www.instagram.com/perfect.garage.md/",
-            image: "/svg/instagram.svg",
-            name: "instagram"
-        },
-        {
-            link: "https://wa.me/37360410999",
-            image: "/svg/whatsapp.svg",
-            name: "whatsapp"
-        },
+        }
 
     ]
     return (<div className="flex flex-col gap-2 fixed right-[58px] bottom-[120px]">
