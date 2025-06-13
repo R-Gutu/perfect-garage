@@ -226,21 +226,27 @@
   "description": "Suntem o echipă dedicată, pasionată de excelență și mereu pregătită să depășească așteptările. Fiecare membru contribuie cu talentul și energia sa pentru a transforma ideile în rezultate remarcabile.",
   "members": [
     {
-      "name": "ANDREI",
+      "name": "GHEORGHE",
       "role": "MOTORIST",
       "image": "/image/team1.png",
-      "alt": "Andrei - Motorist"
+      "alt": "GHEORGHE - Motorist"
     },
     {
-      "name": "GHEORGHE",
-      "role": "MECANIC",
+      "name": "DOREL",
+      "role": "Montator-demontator",
       "image": "/image/team2.png",
-      "alt": "Gheorghe - Mecanic"
+      "alt": "Dorel - Montator-demontator"
+    },
+    {
+      "name": "SERGHEI",
+      "role": "MECANIC",
+      "image": "/image/team3.png",
+      "alt": "Serghei - Mecanic"
     },
     {
       "name": "VALERIU",
       "role": "ELECTRICIAN",
-      "image": "/image/team3.png",
+      "image": "/image/team4.png",
       "alt": "Valeriu - Electrician"
     }
   ]
