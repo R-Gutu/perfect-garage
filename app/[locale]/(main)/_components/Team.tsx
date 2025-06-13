@@ -19,7 +19,7 @@ const TeamSection = () => {
         <div className="text-center mb-12 sm:mb-16 lg:mb-20 font-montserrat">
           <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl xl:text-5xl mb-6 sm:mb-8 font-montserrat">
             {t('title')}
-            <span className=" font-bold">{t('titleAccent')}</span>
+            <span className="font-bold">{t('titleAccent')}</span>
           </h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-gray-300 text-base sm:text-lg lg:text-xl leading-relaxed font-manrope">
