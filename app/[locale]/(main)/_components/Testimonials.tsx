@@ -24,8 +24,8 @@ const Testimonials = () => {
       </span>
     ))
   );
-  const renderTestimonialCard = (testimonial: Testimonial, isFullHeight = false) => (
-    <Link href={testimonial.link} target='blank' id='testimonials' className={`border-2 border-red-500 rounded-2xl sm:rounded-3xl p-4 sm:p-4 lg:p-6 ${isFullHeight ? 'h-full' : ''} flex flex-col cursor-pointer hover:scale-110 transition-transform`}>
+  const renderTestimonialCard = (testimonial: Testimonial, i) => (
+    <Link key={i} href={testimonial.link} target='blank' id='testimonials' className={`border-2 border-red-500 rounded-2xl sm:rounded-3xl p-4 sm:p-4 lg:p-6 flex flex-col cursor-pointer hover:scale-110 transition-transform`}>
       <div className="flex items-center mb-4 sm:mb-6">
         <div className="w-12 h-12 sm:w-16 sm:h-16 overflow-hidden mr-4 flex-shrink-0">
           <Image
@@ -61,7 +61,7 @@ const Testimonials = () => {
           </h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-          {testimonials.map((t, i) => renderTestimonialCard(t))}
+          {testimonials.map((t, i) => renderTestimonialCard(t, i))}
         </div>
       </div>
     </div>
