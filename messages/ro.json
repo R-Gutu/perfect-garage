@@ -53,7 +53,7 @@
   "banner": {
     "headline": "Vă așteptăm pentru\no diagnosticare\ncompletă a mașinii\ndumneavoastră la",
     "price": "390 lei",
-    "headline2": "la rezervarea online",
+    "headline2": "*Doar la programare online",
     "bookBtn": "Programați-vă",
     "consultBtn": "Sunați un specialist",
     "features": [
@@ -61,7 +61,7 @@
         "icon": "/svg/banner1.svg",
         "iconAlt": "Echipamente moderne",
         "title": "Echipamente moderne",
-        "desc": "Folosim tehnologie de top din Italia pentru o diagnosticare precisă și rapidă."
+        "desc": "Folosim tehnologie de top pentru o diagnosticare precisă și rapidă."
       },
       {
         "icon": "/svg/banner2.svg",
@@ -125,7 +125,7 @@
     "discount": "REDUCERE",
     "list": [
       {
-        "title": "Diagnostica automobilului",
+        "title": "Diagnosticare auto",
         "description": "Verificare rapidă computerizată și vizuală a stării tuturor sistemelor auto.",
         "price": "de la 600 lei",
         "image": "/image/service4.png",
@@ -134,8 +134,8 @@
         "featured": false
       },
       {
-        "title": "Schimbarea uleiului și filtrelor",
-        "description": "Serviciu regulat, necesar pentru orice automobil. Rapid, ieftin și important.",
+        "title": "Schimb ulei și filtre",
+        "description": "Serviciu regulat, necesar pentru orice auto. Rapid, ieftin și important.",
         "price": "de la 200 lei",
         "image": "/image/service8.png",
         "hasDiscount": false,
@@ -143,8 +143,8 @@
         "featured": false
       },
       {
-        "title": "Repararea trenului de rulare",
-        "description": "Amortizoare, brațe, bucșe – tot ce asigură confortul și siguranța.",
+        "title": "Reparații sistem de rulare",
+        "description": "Jambe, amortizoare, brațe, bucșe – tot ce asigură confortul și siguranța.",
         "price": "de la 600 lei",
         "image": "/image/service1.png",
         "hasDiscount": false,
@@ -152,8 +152,8 @@
         "featured": false
       },
       {
-        "title": "Geometria roților (reglarea unghiurilor)",
-        "description": "După iarnă, gropi sau repararea suspensiei — obligatoriu.",
+        "title": "Reglaj geometrie roți (convergență-divergență)",
+        "description": "După iarnă, gropi sau reparații la suspensie – obligatoriu.",
         "price": "de la 200 lei",
         "image": "/image/service6.png",
         "hasDiscount": false,
@@ -161,8 +161,8 @@
         "featured": false
       },
       {
-        "title": "Sistemul de frânare (reparare și înlocuire)",
-        "description": "Plăcuțe, discuri, lichid de frână – de aceasta depinde siguranța.",
+        "title": "Sistem de frânare (reparații și înlocuire)",
+        "description": "Plăcuțe, discuri, lichid de frână – de acestea depinde siguranța.",
         "price": "de la 300 lei",
         "image": "/image/service3.png",
         "hasDiscount": false,
@@ -170,17 +170,17 @@
         "featured": false
       },
       {
-        "title": "Repararea motorului și cutiei de viteze",
-        "description": "Servicii complexe, dar profitabile. Deseori urmează după diagnosticare.",
-        "price": "de la 300 lei",
+        "title": "Reparații motor și cutie de viteze",
+        "description": "Reparații fiabile ale componentelor importante după diagnosticare.",
+        "price": "Preț negociabil",
         "image": "/image/service5.png",
         "hasDiscount": false,
         "size": "large",
         "featured": true
       },
       {
-        "title": "Întreținerea aerului condiționat (încărcare, dezinfecție)",
-        "description": "Cerere sezonieră primăvara și vara.",
+        "title": "Întreținere aer condiționat (încărcare, dezinfecție)",
+        "description": "Încărcare cu freon și diagnosticarea sistemului de climatizare.",
         "price": "de la 200 lei",
         "image": "/image/service2.png",
         "hasDiscount": false,
@@ -189,9 +189,18 @@
       },
       {
         "title": "Autoelectrică și electrodiagnostică",
-        "description": "Erori, senzori, faruri, demaror, alternator – întotdeauna în top.",
+        "description": "Erori, senzori, faruri, demaror, alternatoare – facem totul.",
         "price": "de la 600 lei",
         "image": "/image/service7.png",
+        "hasDiscount": false,
+        "size": "normal",
+        "featured": false
+      },
+      {
+        "title": "Lucrări caroserie",
+        "description": "Îndreptare, vopsire și restaurare caroserie de orice complexitate.",
+        "price": "Preț negociabil",
+        "image": "/image/service9.png",
         "hasDiscount": false,
         "size": "normal",
         "featured": false
@@ -305,44 +314,34 @@
   },
   "whyUs": {
     "title": "DE CE NOI?",
-    "subtitle1": "Mai mult decat un",
+    "subtitle1": "Mai mult decât un simplu",
     "subtitle2": "service auto",
-    "illustrationAlt": "ilustrație echipă service",
+    "illustrationAlt": "ilustrație echipa service",
     "list": [
       {
-        "title": "Lucrările se execută la timp",
-        "description": "Executăm toate lucrările rapid, când automobilul vă este urgent necesar.",
-        "image": "/svg/whyus1.svg"
-      },
-      {
-        "title": "Experți în repararea motoarelor și pieselor",
-        "description": "Reparăm piese și motoare în loc de înlocuire costisitoare.",
-        "image": "/svg/whyus2.svg"
-      },
-      {
-        "title": "Mecanici cu experiență mare",
-        "description": "Toți specialiștii au minim 3 ani experiență și specializare îngustă.",
-        "image": "/svg/whyus3.svg"
-      },
-      {
-        "title": "Cei mai buni experți în autoelectrică",
-        "description": "Rezolvăm probleme pe care nici dealerii oficiali nu se angajează să le repare.",
-        "image": "/svg/whyus4.svg"
-      },
-      {
-        "title": "Facem cu garanție pe lucrări",
+        "title": "Executăm cu garanție pentru lucrări",
         "description": "Oferim garanție oficială pentru toate tipurile de lucrări executate.",
         "image": "/svg/whyus5.svg"
       },
       {
-        "title": "Avem evacuator gratuit pentru clienți",
-        "description": "Transportăm gratuit automobilul dumneavoastră la service-ul nostru în caz de defecțiune.",
+        "title": "Avem tractare gratuită pentru clienți",
+        "description": "Transportăm gratuit automobilul dumneavoastră la service-ul nostru în caz de defectare.",
         "image": "/svg/whyus6.svg"
       },
       {
-        "title": "Posibilă plata în rate sau în credit",
-        "description": "Lucrăm cu parteneri pentru eșalonarea convenabilă și creditare.",
+        "title": "Posibilă plata în rate sau cu credit",
+        "description": "Colaborăm cu parteneri pentru rată convenabilă și creditare.",
         "image": "/svg/whyus7.svg"
+      },
+      {
+        "title": "Experți cu experiență în reparații și autoelectrică",
+        "description": "Reparații motoare și piese, precum și sarcini complexe de electrică. Specialiști cu experiență până la 10 ani.",
+        "image": "/svg/whyus2.svg"
+      },
+      {
+        "title": "Lucrările se execută la timp",
+        "description": "Executăm toate lucrările rapid, când automobilul dumneavoastră este urgent necesar.",
+        "image": "/svg/whyus1.svg"
       }
     ]
   }

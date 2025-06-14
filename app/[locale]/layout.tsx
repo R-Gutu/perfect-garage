@@ -4,7 +4,7 @@ import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
-import Widget from "./_components/Widget";
+// import Widget from "./_components/Widget";
 import { domAnimation, LazyMotion } from "motion/react"
 import { GoogleTagManager } from "@next/third-parties/google";
 
@@ -42,7 +42,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
-            <Widget />
+            {/* <Widget /> */}
           </NextIntlClientProvider>
         </LazyMotion>
       </body>
