@@ -362,6 +362,11 @@
         "title": "Lucrările se execută la timp",
         "description": "Executăm toate lucrările rapid, când automobilul dumneavoastră este urgent necesar.",
         "image": "/svg/whyus1.svg"
+      },
+      {
+        "title": "Deservim și autoutilitare, și microbuze",
+        "description": "Lucrăm nu doar cu mașini mici, ci și cu autoutilitare, microbuze, manipulatori și alte vehicule de marfă.",
+        "image": "/svg/whyus3.svg"
       }
     ]
   }

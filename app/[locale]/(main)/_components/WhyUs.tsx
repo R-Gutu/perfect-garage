@@ -26,7 +26,7 @@ const WhyUs = () => {
         </div>
         <div className="flex flex-col w-full lg:w-2/3 h-full">
           {whyusList.map((item, index) => (
-            <div key={index} className="rounded-xl cursor-pointer transition-colors duration-300 hover:bg-[#292929] flex flex-col sm:flex-row items-center sm:items-center gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-6 lg:px-12 py-4 sm:py-6">
+            <div key={index} className="rounded-xl cursor-pointer transition-colors duration-300 hover:bg-[#292929] flex flex-col sm:flex-row items-center sm:items-center gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-6 lg:px-12 py-1 sm:py-2">
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
                   src={item.image}
