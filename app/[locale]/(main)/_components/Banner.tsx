@@ -34,9 +34,9 @@ const Banner = ({ setModalOpen }: { setModalOpen: (bool: boolean) => void }) => 
           </div>
           {/* Right Features */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-6 font-manrope order-1 lg:order-2">
-            {Array.from({ length: 3 }).map((_, idx) => (
+            {Array.from({ length: 4 }).map((_, idx) => (
               <div key={idx}
-                className={`flex flex-col sm:flex-col lg:flex-row xl:flex-col space-y-2 sm:space-y-3 lg:space-y-0 lg:space-x-4 xl:space-x-0 xl:space-y-3 items-start lg:items-center xl:items-start ${idx === 2 ? "sm:col-span-2 lg:col-span-1 xl:col-span-2" : ""}`}>
+                className={`flex flex-col sm:flex-col lg:flex-row xl:flex-col space-y-2 sm:space-y-3 lg:space-y-0 lg:space-x-4 xl:space-x-0 xl:space-y-3 items-start lg:items-center xl:items-start`}>
                 <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center flex-shrink-0">
                   <Image
                     src={t(`features.${idx}.icon`)}

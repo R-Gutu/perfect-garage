@@ -74,6 +74,12 @@
         "iconAlt": "Prețuri accesibile",
         "title": "Prețuri accesibile",
         "desc": "Oferim cel mai bun raport calitate-preț. Fără costuri ascunse."
+      },
+      {
+        "icon": "/svg/banner1.svg",
+        "iconAlt": "Garanție de calitate",
+        "title": "Garanție de calitate",
+        "desc": "Oferim garanție pentru toate tipurile de lucrări, pentru liniștea ta."
       }
     ]
   },
@@ -283,32 +289,46 @@
     "title": "Oamenii au încredere în serviciile noastre",
     "list": [
       {
-        "name": "Constantin Roșcupkin",
-        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKWMbXl1uLM6rtVDx_5pl8Z5g0XLKkq-xse9VhrDfv3iXVPQw=w90-h90-p-rp-mo-br100",
-        "rating": 5,
-        "text": "Am fost la acest service acum o săptămână. Au schimbat rapid uleiul și au eliminat eroarea. Au făcut o reducere de 200 lei, foarte plăcut",
-        "link": "https://maps.app.goo.gl/r9wsU4Npu3vyvD77A"
-      },
-      {
         "name": "Victor Spînu",
         "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjVjv1Ulv87E_WC33A9E-FLPK-q9Na-NMlV-qx2zrb1l6j9fknxneQ=w90-h90-p-rp-mo-ba2-br100",
         "rating": 5,
-        "text": "Sunt foarte mulțumit de acest autoservice. Am fost de trei ori cu un BMW E39 cu diferite probleme și de fiecare dată au fost rezolvate într-un timp scurt și cu mult profesionalism. Recomand cu încredere!!!",
+        "text": "Sunt foarte mulțumit de acest service auto. Am venit de trei ori cu BMW E39 cu probleme diferite, și de fiecare dată au fost rezolvate rapid și cu mare profesionalism. Recomand cu încredere!!!",
         "link": "https://maps.app.goo.gl/3Xpdn36tSUaY55fPA"
       },
       {
-        "name": "Iacob Stalin",
-        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLskdSpQsDtr1sxyYRM3iB8gWP5rmEcRePoMVegFkBZ1jqPiQ=w90-h90-p-rp-mo-ba2-br100",
+        "name": "Ștefan Cortac",
+        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJBBmFMN5EqbW6rZajJE5S8xzbWnsC2Lul6cv9ASTaCjVPi5w=w90-h90-p-rp-mo-br100",
         "rating": 5,
-        "text": "Evacuatorul gratuit m-a surprins! La început am crezut că e o păcăleală ieftină, dar m-au surprins! Au preluat rapid mașina, au identificat defecțiunea, m-au lăsat în zona de reparații și mi-au explicat clar cauza. După 15 minute m-au dus gratuit într-un loc convenabil pentru mine, credeam că voi rămâne acolo o săptămână, dar au sunat după 4 ore și au propus să iau mașina deja reparată! Cum faceți asta? Nu mă așteptam să avem în orașul nostru un service cu un astfel de nivel de deservire. Prețurile sunt foarte democratice. Atitudinea este politicoasă. Toate cauzele defecțiunii au fost explicate și arătate pe lift în mod vizual. Acum pentru orice problemă mă voi adresa doar la voi! Mulțumesc tuturor celor care au participat la lucrul cu mașina mea! Acum pornește din prima. Și a apărut tracțiune! Mulțumesc. Ne vom mai vedea, dar sper că nu curând🤗",
-        "link": "https://maps.app.goo.gl/haEZQC5hViUGo8rt5"
+        "text": "Un servis super, am fost foarte mulțumit de calitate și rapiditate, recomand! Plus oferă și garanție.",
+        "link": "https://maps.app.goo.gl/GAGGebJmfKsBqpwt8"
       },
       {
-        "name": "Valeriu Cotoneț",
+        "name": "Valeri Cotoneț",
         "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJjetgWfLZdPnLxHS3re1YOPfahgRXZUE2b27J-qxUxsieWrQ=w90-h90-p-rp-mo-br100",
         "rating": 5,
-        "text": "Am venit cu vechea mea Honda Prelude să se ocupe de sistemul electric... de care nimeni nu voia să se atingă! Dar băieții sunt grozavi, au făcut totul perfect!!! Sunt mulțumit... Recomand",
+        "text": "Am venit cu bătrâna mea Honda Prelude să rezolv problema cu electrica... de care nimeni nu voia să se ocupe! Dar băieții sunt de treabă, au făcut totul excelent!!! Sunt mulțumit... Recomand.",
         "link": "https://maps.app.goo.gl/NveL1xaGj2onvDaGA"
+      },
+      {
+        "name": "Sasha Mamedov",
+        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIQJOEhJqtQHKhN4m-PW3r6KojJgN6vGOkA8TtIugtQR3n9CA=w90-h90-p-rp-mo-br100",
+        "rating": 5,
+        "text": "Reparația a fost făcută calitativ, și cel mai important în termenul promis. Prețurile sunt normale.",
+        "link": "https://maps.app.goo.gl/YgRfh42hNHWB3zAG7"
+      },
+      {
+        "name": "Denis Carabin",
+        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIYjKRyf_842fz3e9M5UdVnsvBPwQsEJJlPFcd0ZKN6MkOAHw=w90-h90-p-rp-mo-br100",
+        "rating": 5,
+        "text": "Reparația a fost făcută calitativ, și cel mai important în termenul promis. Prețurile sunt normale.",
+        "link": "https://maps.app.goo.gl/tLqixWnzuAuQ8TR2A"
+      },
+      {
+        "name": "Creț Cătălin",
+        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLUjrqiTNjoq029eknC-GsUVlnsJVd7k0hBie0Gd9rZDMV51w=w90-h90-p-rp-mo-br100",
+        "rating": 5,
+        "text": "Mi-au reparat masina foarte rapid si la un preț accesibil,recomand",
+        "link": "https://maps.app.goo.gl/h781FuV8q2ALREn67"
       }
     ]
   },

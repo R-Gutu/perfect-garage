@@ -60,17 +60,8 @@ const Testimonials = () => {
             {t("title")}
           </h2>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-6 sm:gap-8 lg:gap-10 items-start">
-          <div className="flex">
-            {renderTestimonialCard(testimonials[0], true)}
-          </div>
-          <div className="space-y-6 sm:space-y-8 lg:space-y-10">
-            {renderTestimonialCard(testimonials[1])}
-            {renderTestimonialCard(testimonials[2])}
-          </div>
-          <div className="flex">
-            {renderTestimonialCard(testimonials[3], true)}
-          </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+          {testimonials.map((t, i) => renderTestimonialCard(t))}
         </div>
       </div>
     </div>

@@ -61,9 +61,9 @@ export default function Footer() {
               <p className="font-bold text-[18px] transition-colors duration-300 group-hover:text-green-400 text-white">
                 {t("contacts.phone")}
               </p>
-              <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px] transition-all duration-300 group-hover:text-white group-hover:translate-x-1">
+              <Link href={"tel:+37360410999"} className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px] transition-all duration-300 group-hover:text-white group-hover:translate-x-1">
                 {t("contacts.phoneNumbers.0")}
-              </p>
+              </Link>
             </div>
 
             <div className="transform transition-all duration-300 hover:translate-x-2 hover:scale-105 group">
@@ -81,8 +81,8 @@ export default function Footer() {
                 {t("contacts.addresses")}
               </p>
               <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px] transition-all duration-300 group-hover:text-white group-hover:translate-x-1">
-                {t("contacts.addressList.0")}<br />
-                {t("contacts.addressList.1")}
+                <Link href={"https://maps.app.goo.gl/c92TEf83FD8EVgrQ6"}>{t("contacts.addressList.0")}</Link> <br />
+                <Link href={"https://maps.app.goo.gl/hE2q5VmtMrEcjJpQA"}>{t("contacts.addressList.1")}</Link>
               </p>
             </div>
           </div>
