@@ -1,7 +1,7 @@
 "use client"
 import { Bitrix24Form } from "./Bitrix24Form";
 
-export default function RuForm({ className }: {className?: string}) {
+export default function RoForm({ className }: { className?: string }) {
   return (
     <Bitrix24Form
       className={`${className}`}

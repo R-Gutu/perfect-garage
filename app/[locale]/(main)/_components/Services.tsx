@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const Services = () => {
   const t = useTranslations('services');
-  const serviceCount = 8;
+  const serviceCount = 9;
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   const cardVariants = {
@@ -119,6 +119,7 @@ const Services = () => {
                       </motion.h3>
                       <motion.p
                         variants={titleVariants}
+                        className="!text-white/60" 
                       >
                         {t(`list.${idx}.description`)}
                       </motion.p>

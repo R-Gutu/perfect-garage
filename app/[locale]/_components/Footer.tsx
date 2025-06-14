@@ -105,13 +105,13 @@ export default function Footer() {
       <div className="flex items-end animate-[slideInUp_0.8s_ease-out]">
         <div className="grid grid-cols-1 gap-2">
           <Link target="blank" href="https://www.facebook.com/perfectgarage.md/" className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(59,130,246,0.7)] cursor-pointer">
-            <Image src="/svgs/facebook.svg" width={50} height={50} alt="facebook" />
+            <Image src="/svg/facebook.svg" width={50} height={50} alt="facebook" />
           </Link>
           <Link target="blank" href="https://www.instagram.com/perfect.garage.md/" className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(236,72,153,0.7)] cursor-pointer">
-            <Image src="/svgs/instagram.svg" width={50} height={50} alt="instagram" />
+            <Image src="/svg/instagram.svg" width={50} height={50} alt="instagram" />
           </Link>
           <Link href={"https://wa.me/37360410999"} className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(34,197,94,0.7)] cursor-pointer">
-            <Image src="/svgs/whatsapp.svg" width={50} height={50} alt="whatsapp" />
+            <Image src="/svg/whatsapp.svg" width={50} height={50} alt="whatsapp" />
           </Link>
         </div>
         <div className="self-end text-center justify-self-center w-full text-[#8F9FA3] px-[15%]">

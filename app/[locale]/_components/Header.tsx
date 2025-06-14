@@ -125,9 +125,9 @@ const Header = () => {
         <motion.div
           className="flex flex-col [&>p]:flex [&>p]:gap-3 max-[550px]:text-[10px] max-[380px]:text-[8px]"
         >
-          <Link href={"tel:+37360410999"} className="flex gap-2 hover:scale-105 hover:text-red-500 transition-all"><FaPhoneAlt />+373 60 410 999</Link>
-          <Link href={"https://maps.app.goo.gl/c92TEf83FD8EVgrQ6"} target="blank" className="flex gap-2 hover:scale-105 hover:text-red-500 transition-all"><FaMapMarkerAlt />{t('address1')}</Link>
-          <Link href={"https://maps.app.goo.gl/hE2q5VmtMrEcjJpQA"} target="blank" className="flex gap-2 hover:scale-105 hover:text-red-500 transition-all"><FaMapMarkerAlt />{t('address2')}</Link>
+          <Link href={"tel:+37360410999"} className="flex gap-2 hover:scale-105 hover:text-red-500 transition-all text-[22px] max-[550px]:text-[16px] max-[380px]:text-[14px]"><FaPhoneAlt />+373 60 410 999</Link>
+          <Link href={"https://maps.app.goo.gl/c92TEf83FD8EVgrQ6"} target="blank" className="flex gap-2 hover:scale-105 hover:text-red-500 transition-all text-white/50"><FaMapMarkerAlt />{t('address1')}</Link>
+          <Link href={"https://maps.app.goo.gl/hE2q5VmtMrEcjJpQA"} target="blank" className="flex gap-2 hover:scale-105 hover:text-red-500 transition-all text-white/50"><FaMapMarkerAlt />{t('address2')}</Link>
         </motion.div>
 
         <motion.div
