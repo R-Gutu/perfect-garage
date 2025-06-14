@@ -24,7 +24,7 @@ const Testimonials = () => {
       </span>
     ))
   );
-  const renderTestimonialCard = (testimonial: Testimonial, i) => (
+  const renderTestimonialCard = (testimonial: Testimonial, i: number) => (
     <Link key={i} href={testimonial.link} target='blank' id='testimonials' className={`border-2 border-red-500 rounded-2xl sm:rounded-3xl p-4 sm:p-4 lg:p-6 flex flex-col cursor-pointer hover:scale-110 transition-transform`}>
       <div className="flex items-center mb-4 sm:mb-6">
         <div className="w-12 h-12 sm:w-16 sm:h-16 overflow-hidden mr-4 flex-shrink-0">
