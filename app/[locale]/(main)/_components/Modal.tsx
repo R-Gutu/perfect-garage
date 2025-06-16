@@ -3,10 +3,10 @@ import { useEffect } from 'react';
 import { IoClose } from 'react-icons/io5';
 import RuForm from "./RuForm";
 // import RoForm from "./RoForm";
-import { useLocale } from 'next-intl';
+// import { useLocale } from 'next-intl';
 
 export default function Modal({ onClose } : { onClose: () => void }) {
-    const locale = useLocale();
+    // const locale = useLocale();
     // Handle Esc key press
     useEffect(() => {
         const handleEsc = (e: KeyboardEvent) => {
