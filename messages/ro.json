@@ -267,7 +267,7 @@
       },
       {
         "name": "DOREL",
-        "role": "Montator-demontator",
+        "role": "MONTATOR-DEMONTATOR",
         "image": "/image/team2.png",
         "alt": "Dorel - Montator-demontator"
       },
@@ -279,7 +279,7 @@
       },
       {
         "name": "VALERIU",
-        "role": "ELECTRICIAN",
+        "role": "SPECIALIST ÎN LUCRĂRI DE CAROSERIE",
         "image": "/image/team4.jpg",
         "alt": "Valeriu - Electrician"
       }
