@@ -109,7 +109,7 @@ const Header = () => {
   return (
     <div className="relative">
       <div
-        className={cn(`font-inter fixed left-0 right-0 flex justify-between items-center px-[4%] max-[690px]:px-[8%] z-50 h-[100px]`)}
+        className={cn(`font-inter fixed left-0 right-0 flex justify-between items-center px-[4%] max-[690px]:px-[8%] z-50 h-[100px] text-white`)}
         style={{
           backgroundColor: `rgba(0, 0, 0, ${Math.max(scroll.y / 200, 0.2)})`
         }}
@@ -125,7 +125,7 @@ const Header = () => {
         <motion.div
           className="flex flex-col [&>p]:flex [&>p]:gap-3 max-[550px]:text-[10px] max-[380px]:text-[8px]"
         >
-          <Link href={"tel:+37360410999"} className="flex gap-2 hover:scale-105 hover:text-red-500 transition-all text-[22px] max-[550px]:text-[16px] max-[380px]:text-[14px] text-white"><FaPhoneAlt />+373 60 410 999</Link>
+          <Link href={"tel:+37360410999"} className="flex gap-2 hover:scale-105 hover:text-red-500 transition-all text-[22px] max-[550px]:text-[16px] max-[380px]:text-[14px] text-white"><FaPhoneAlt /><span className="text-white">+373 60 410 999</span></Link>
           <Link href={"https://maps.app.goo.gl/c92TEf83FD8EVgrQ6"} target="blank" className="flex gap-2 hover:scale-105 hover:text-red-500 transition-all text-white/50"><FaMapMarkerAlt />{t('address1')}</Link>
           <Link href={"https://maps.app.goo.gl/hE2q5VmtMrEcjJpQA"} target="blank" className="flex gap-2 hover:scale-105 hover:text-red-500 transition-all text-white/50"><FaMapMarkerAlt />{t('address2')}</Link>
         </motion.div>
@@ -210,7 +210,7 @@ const Header = () => {
                       whileTap={{ scale: 0.95 }}
                       custom={index}
                     >
-                      {t(`nav.${key}`)}
+                      <span className="text-white">{t(`nav.${key}`)}</span>
                     </motion.li>
                   ))}
 

@@ -58,12 +58,24 @@ export default function Footer() {
               <p className="font-bold text-[20px] transition-colors duration-300 group-hover:text-blue-400 text-white">
                 {t("contacts.heading")}
               </p>
+
               <p className="font-bold text-[18px] transition-colors duration-300 group-hover:text-green-400 text-white">
                 {t("contacts.phone")}
               </p>
               <Link href={"tel:+37360410999"} className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px] transition-all duration-300 group-hover:text-white group-hover:translate-x-1">
                 {t("contacts.phoneNumbers.0")}
               </Link>
+              <div className="flex gap-4 mt-4">
+                <Link target="blank" href="https://www.facebook.com/perfectgarage.md/" className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(59,130,246,0.7)] cursor-pointer">
+                  <Image src="/svg/facebook.svg" width={50} height={50} alt="facebook" />
+                </Link>
+                <Link target="blank" href="https://www.instagram.com/perfect.garage.md/" className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(236,72,153,0.7)] cursor-pointer">
+                  <Image src="/svg/instagram.svg" width={50} height={50} alt="instagram" />
+                </Link>
+                <Link target="blank" href={"https://wa.me/37360410999"} className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(34,197,94,0.7)] cursor-pointer">
+                  <Image src="/svg/whatsapp.svg" width={50} height={50} alt="whatsapp" />
+                </Link>
+              </div>
             </div>
 
             <div className="transform transition-all duration-300 hover:translate-x-2 hover:scale-105 group">
@@ -102,19 +114,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex items-end animate-[slideInUp_0.8s_ease-out]">
-        <div className="grid grid-cols-1 gap-2">
-          <Link target="blank" href="https://www.facebook.com/perfectgarage.md/" className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(59,130,246,0.7)] cursor-pointer">
-            <Image src="/svg/facebook.svg" width={50} height={50} alt="facebook" />
-          </Link>
-          <Link target="blank" href="https://www.instagram.com/perfect.garage.md/" className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(236,72,153,0.7)] cursor-pointer">
-            <Image src="/svg/instagram.svg" width={50} height={50} alt="instagram" />
-          </Link>
-          <Link href={"https://wa.me/37360410999"} className="transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:drop-shadow-[0_0_10px_rgba(34,197,94,0.7)] cursor-pointer">
-            <Image src="/svg/whatsapp.svg" width={50} height={50} alt="whatsapp" />
-          </Link>
-        </div>
-        <div className="self-end text-center justify-self-center w-full text-[#8F9FA3] px-[15%]">
+      <div className="flex items-center animate-[slideInUp_0.8s_ease-out] max-[800px]:justify-center">
+        <div className="max-[800px]:text-center w-full text-[#8F9FA3] pr-[15%] max-[800px]:px-[15%]">
           {t.rich("copyright", {
             link: (chunks) => <Link className="hover:text-[#836FFF] transition-all duration-700" href={"https://www.quant-apps.com/"} target="blank">{chunks}</Link>
           })}

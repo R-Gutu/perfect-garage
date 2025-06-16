@@ -280,7 +280,7 @@
       {
         "name": "VALERIU",
         "role": "ELECTRICIAN",
-        "image": "/image/team4.png",
+        "image": "/image/team4.jpg",
         "alt": "Valeriu - Electrician"
       }
     ]
@@ -357,11 +357,6 @@
         "title": "Experți cu experiență în reparații și autoelectrică",
         "description": "Reparații motoare și piese, precum și sarcini complexe de electrică. Specialiști cu experiență până la 10 ani.",
         "image": "/svg/whyus2.svg"
-      },
-      {
-        "title": "Lucrările se execută la timp",
-        "description": "Executăm toate lucrările rapid, când automobilul dumneavoastră este urgent necesar.",
-        "image": "/svg/whyus1.svg"
       },
       {
         "title": "Deservim și autoutilitare, și microbuze",

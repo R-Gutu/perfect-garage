@@ -17,12 +17,12 @@
   --font-montserrat: var(--font-montserrat)
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #222222;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
