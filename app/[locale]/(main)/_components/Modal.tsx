@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import { IoClose } from 'react-icons/io5';
 import RuForm from "./RuForm";
-import RoForm from "./RoForm";
+// import RoForm from "./RoForm";
 import { useLocale } from 'next-intl';
 
 export default function Modal({ onClose } : { onClose: () => void }) {
@@ -40,7 +40,8 @@ export default function Modal({ onClose } : { onClose: () => void }) {
                 >
                     <IoClose size={20} className="text-gray-600" />
                 </button>
-                {locale == 'ru' ? <RuForm className='w-full' /> : <RoForm className='w-full'/>}
+                {/* {locale == 'ru' ? <RuForm className='w-full' /> : <RoForm className='w-full'/>} */}
+                <RuForm />
                 
             </div>
         </div>
