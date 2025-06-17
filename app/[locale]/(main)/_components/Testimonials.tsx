@@ -53,7 +53,7 @@ const Testimonials = () => {
   );
 
   return (
-    <div className="bg-[#222222] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+    <div className="bg-[#141414] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[95%] mx-auto">
         <div className="text-start mb-12 sm:mb-16 lg:mb-20">
           <h2 className="text-white text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold font-montserrat">

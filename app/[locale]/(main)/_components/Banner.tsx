@@ -7,7 +7,7 @@ import { BsTelephone } from "react-icons/bs";
 const Banner = ({ setModalOpen }: { setModalOpen: (bool: boolean) => void }) => {
   const t = useTranslations('banner');
   return (
-    <div className="bg-[#222222] py-4 sm:py-8 lg:py-12 xl:py-16 px-2 sm:px-4 lg:px-6 xl:px-8">
+    <div className="bg-[#141414] py-4 sm:py-8 lg:py-12 xl:py-16 px-2 sm:px-4 lg:px-6 xl:px-8">
 
       <div className="bg-[#FF001D] text-white p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16 rounded-xl sm:rounded-2xl max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-start lg:items-center">

@@ -13,7 +13,7 @@ const TeamSection = () => {
   const members = t.raw('members') as TeamMember[];
 
   return (
-    <div className="bg-[#222222] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+    <div className="bg-[#141414] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20 font-montserrat">
