@@ -8,14 +8,14 @@ export default function Widget() {
   // Function to fix widget anchor tags
   const fixWidgetAnchors = () => {
     const widgetButtons = document.querySelectorAll('a[data-b24-crm-button-widget]');
-    
+
     widgetButtons.forEach((button) => {
       // Add href if missing
       if (!button.hasAttribute('href')) {
         button.setAttribute('href', '#consultation');
-        
+
         // Prevent default behavior to maintain widget functionality
-        button.addEventListener('click', function(e) {
+        button.addEventListener('click', function (e) {
           e.preventDefault();
           // The widget's original click handler should still work
         }, { once: true }); // Use once: true to avoid duplicate listeners
@@ -35,10 +35,10 @@ export default function Widget() {
       existingScript.remove();
     }
 
-    const s = document.createElement('script'); 
-    s.async = true; 
+    const s = document.createElement('script');
+    s.async = true;
     s.src = scripts[locale] + '?' + (Date.now() / 60000 | 0);
-    
+
     // Add load event listener to fix anchors after script loads
     s.onload = () => {
       // Use multiple timeouts to catch the widget at different loading stages
@@ -67,6 +67,11 @@ export default function Widget() {
           });
         }
       });
+    });
+
+    document.querySelectorAll('a[data-b24-crm-button-widget]:not([href])').forEach(link => {
+      link.setAttribute("href", "#");
+      link.addEventListener("click", e => e.preventDefault());
     });
 
     // Start observing
