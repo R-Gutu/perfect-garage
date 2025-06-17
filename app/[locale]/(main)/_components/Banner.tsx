@@ -47,7 +47,7 @@ const Banner = ({ setModalOpen }: { setModalOpen: (bool: boolean) => void }) => 
                   />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-bold text-base sm:text-lg mb-1 sm:mb-2">{t(`features.${idx}.title`)}</h3>
+                  <p className="font-bold text-base sm:text-lg mb-1 sm:mb-2">{t(`features.${idx}.title`)}</p>
                   <p className="text-xs sm:text-sm opacity-90 leading-relaxed">{t(`features.${idx}.desc`)}</p>
                 </div>
               </div>

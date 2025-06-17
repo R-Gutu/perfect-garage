@@ -46,9 +46,11 @@ const Hero = ({ setModalOpen }: { setModalOpen: (bool: boolean) => void }) => {
                 <MdKeyboardArrowRight className="group-hover:translate-x-1 transition-transform duration-300" size={20} />
               </button>
 
-              <button className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-3 cursor-pointer bg-transparent border border-gray-400 hover:bg-white hover:text-gray-800 transition-all duration-300 px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-white text-sm sm:text-base hover:scale-105 ">
-                <BsTelephone size={16} />
-                <Link href="tel:+373(60)410999" className="font-manrope">{t("consultBtn")}</Link>
+              <button className="w-full sm:w-auto flex items-center justify-center sm:justify-start cursor-pointer bg-transparent border border-gray-400 hover:bg-white hover:text-gray-800 transition-all duration-300 rounded-xl sm:rounded-2xl font-semibold text-white text-sm sm:text-base hover:scale-105 ">
+                <Link href="tel:+373(60)410999" className="font-manrope w-full h-full flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 ">
+                  <BsTelephone size={16} />
+                  {t("consultBtn")}
+                </Link>
               </button>
             </div>
           </div>
