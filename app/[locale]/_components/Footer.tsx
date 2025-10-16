@@ -94,7 +94,7 @@ export default function Footer() {
               </p>
               <p className="text-[#8F9FA3] text-nowrap max-[400px]:text-[12px] transition-all duration-300 group-hover:text-white group-hover:translate-x-1">
                 <Link href={"https://maps.app.goo.gl/c92TEf83FD8EVgrQ6"}>{t("contacts.addressList.0")}</Link> <br />
-                <Link href={"https://maps.app.goo.gl/hE2q5VmtMrEcjJpQA"}>{t("contacts.addressList.1")}</Link>
+                <Link href={"https://maps.app.goo.gl/itDLJ8koM8G3KSDt9"}>{t("contacts.addressList.1")}</Link>
               </p>
             </div>
           </div>
